@@ -2,6 +2,8 @@
 *Leer este archivo al inicio de cada chat nuevo para entender todo.*
 *Última actualización: 19/06/2026*
 
+> **REGLA DE ORO:** Todo lo que se haga en este proyecto se documenta acá o en el tracker antes de cerrar el chat. Después se regeneran los PDFs con `python3 generar_pdfs.py` y `python3 generar_portfolio.py` y se hace push al branch.
+
 ---
 
 ## QUIÉNES SOMOS
