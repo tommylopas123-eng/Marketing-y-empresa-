@@ -160,10 +160,67 @@ Salir de la dependencia del boca a boca → generar flujo constante de clientes 
 
 ---
 
+## BANCO DE FOTOS — ETIQUETAS DE REFERENCIA (recibidas 19/06/2026)
+
+Fotos enviadas por Tommy de trabajos del taller. Guardadas en `/root/.claude/uploads/`.
+Procesadas con remoción de fondo → guardadas en `assets/fotos-procesadas/`.
+
+### Fotos disponibles (37 imágenes)
+| # | Etiqueta | Descripción | Calidad foto | Uso recomendado |
+|---|----------|-------------|--------------|-----------------|
+| 01 | Arciel | Rollo tafeta blanca, texto impreso, instrucciones lavado | Media | Post tafeta |
+| 02 | Wet Etonic | Etiqueta negra/blanca sobre madera, bien definida | Alta | Post alta definición |
+| 03 | Quiksilver | Cinta bordada azul marino, logo blanco y rojo | Alta | Post serie/rollo |
+| 04 | TShirts/Denim | Etiqueta negra con lettering blanco tipográfico | Alta | Post alta densidad |
+| 05 | Forty Five | Bandera británica bordada, colores intensos | Alta | Post triple densidad |
+| 06 | Caterpillar | Marrón oscuro, logo naranja bordado, textura densa | Alta | Post texturada |
+| 07 | You Make My Heart Smile | Beige, texto rojo/negro, doblada al medio | Alta | Post diseño especial |
+| 08 | Pierre (x2) | Negro y gris, dobladas al medio, texto espejado | Alta | Post terminaciones |
+| 09 | NX Level 01 | Azul con logo complejo marrón/blanco, fondo blanco | Alta | Post alta definición |
+| 10 | Old Navy/Yachting | Negra con texto rojo, instrucciones, doblez | Media | Post tafeta/interna |
+| 11 | In Your Dreams/Beditorial | Negras con texto cursivo rojo, fondo blanco editorial | Muy alta | Portada/hero post |
+| 12 | Yamaha Racing | Multicolor con logo complejo, hilados de fondo | Alta | Post capacidad logos |
+| 13 | John Deere (x2) | Amarillo/verde, anverso y reverso doblada | Alta | Post terminaciones |
+| 14 | Camp | Negra con lettering script blanco, talles rojo, sobre tela | Muy alta | Post diseño propio |
+| 15 | Classic Accessories | Gris y negra bicolor, logo integrado, fondo blanco | Alta | Post alta definición |
+| 16 | Superman | Azul, logo multicolor, ilustración | Media | Post capacidad logos |
+| 17 | Elmo/Emma (x2) | Dorado y negro, cursivo dorado, hilo metálico | Muy alta | Post etiqueta premium |
+| 18 | Patagonia | Negra, ilustración montañas multicolor | Alta | Post capacidad logos |
+| 19 | Pierre Balmain Paris | Blanca, patrón geométrico negro/dorado, muy compleja | Alta | Post alta definición |
+| 20 | Ombu | Blanca, bloques azul celeste, instrucciones | Media | Post tafeta argentina |
+| 21 | Pierre Cardin | Roja y negra, hilo plateado metálico, fondo blanco | Muy alta | Post premium/metálico |
+| 22 | Me Fashion | Azul/rojo vertical, script blanco, talle en círculo | Alta | Post diseño compacto |
+| 23 | Noorani Fashions | Cinta rollo rojo/blanco/gris, tipografía serif | Media | Post producción en rollo |
+| 24 | Camps 1983 | Cuadradas marrón oscuro apiladas en abanico, fondo blanco | Muy alta | Post colección/cantidad |
+| 25 | Porsche Golf Cup | Ancha blanca con rayas, rojo/negro, dos tomas | Alta | Post parche/ancho |
+| 26 | Converse All Star | Negras y blancas dispersas con rollo hilo dorado | Muy alta | Post variedad/editorial |
+| 27 | Balmain | Azul marino, escudo bordado, banderita francesa, cadena dorada | Muy alta | Post etiqueta de lujo |
+| 28 | You Make My Heart Smile | Desplegada sobre documentos vintage, editorial | Muy alta | Post contexto/historia |
+| 29 | Givenchy | Cuero blanco sobre denim azul, logo repetido en capas | Muy alta | Post instagram hero |
+| 30 | Beverly Hills Polo Club | Gris oscura, jinete beige dorado, sobre tela a rayas | Muy alta | Post texturada/detalle |
+| 31 | Tough Jeansmith (x2) | Roja/negra rotada en diagonal, efecto splatter, fondo blanco | Muy alta | Post más impactante |
+| 32 | Temaiken | Blanca, logo rojo/marrón, "Industria Argentina" | Media | Post cliente local |
+| 33 | Precioux Girls | Blanca pequeña, multicolor rosa/verde/violeta, fondo negro | Muy alta | Post etiquetas bebé/niños |
+| 34 | Start Prat | Gris oscura vertical doblada, texto espejado, sobre tela gris | Alta | Post terminación doblada |
+| 35 | Porsche (segunda toma) | Fondo gris oscuro, más editorial | Alta | Post alternativo |
+| 36 | Tough Jeansmith (tercera toma) | Fondo blanco limpio, diagonal | Muy alta | Post más limpia |
+
+### Las 8 mejores para posts (prioridad):
+1. Beditorial/In Your Dreams — composición editorial perfecta
+2. Givenchy — la más impactante visualmente  
+3. Balmain con cadena dorada — la más lujosa
+4. Tough Jeansmith (fondo blanco) — la más creativa
+5. Camps 1983 en abanico — muestra cantidad/producción
+6. Converse con rollo de hilo — editorial natural
+7. Pierre Cardin roja/plateada — premium y limpia
+8. Elmo/Emma doradas — etiqueta de lujo más la más elegante
+
+---
+
 ## PENDIENTES (datos aún no confirmados)
 - [ ] Precio orientativo por tipo y cantidad (para contenido y comparadores)
 - [ ] Cantidad de pedidos actuales por mes
-- [ ] Fotos del taller y del proceso de producción
+- [ ] Fotos del taller y máquinas suizas en producción
 - [ ] Testimonios escritos de clientes
 
 ---

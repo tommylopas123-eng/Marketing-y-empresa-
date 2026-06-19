@@ -43,8 +43,9 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 
 ## 🔄 EN PROGRESO
 
-- [ ] **Documentación completa** — este archivo y el contexto de empresa (en curso ahora)
-- [ ] **Esperar fotos del taller y etiquetas** → Tommy las pasa cuando pueda
+- [ ] **Procesar fotos de etiquetas** — remover fondos, mejorar calidad → guardar en `assets/fotos-procesadas/`
+- [ ] **Incorporar fotos a posts v4** — reemplazar placeholders con las 8 mejores fotos procesadas
+- [ ] **Fotos del taller y máquinas** → Tommy las pasa después
 
 ---
 
