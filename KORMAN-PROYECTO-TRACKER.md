@@ -19,7 +19,8 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 - [x] **Perfiles YAML de competidores** — Printmax, BestLabels, China. Fuente de verdad centralizada.
 
 ### Identidad visual
-- [x] **Logo KORMAN aprobado** — wordmark puro, BricolageGrotesque Bold, negro/blanco, sin ícono
+- [x] **Logo/emblema KORMAN aprobado (foto de perfil)** — emblema hexagonal estilo "casa": hexágono negro, techo dorado, **K** grande blanca, **aguja plateada** atravesando en diagonal con ojo e hilo. Archivo oficial: `assets/korman-logo-oficial.jpg` (= `assets/korman-instagram-profile.jpg`). Versión elegida: hilo plata. *Tentativo — se puede revisar el color del hilo más adelante.*
+- [x] **Logo KORMAN wordmark** — wordmark puro, BricolageGrotesque Bold, negro/blanco, sin ícono (uso secundario)
 - [x] **5 versiones del logo** — horizontal blanco, horizontal negro, avatar IG, watermarks transparentes
 - [x] **Filosofía visual "Hilo Nocturno"** — oscuro, dorado, patrones de tejido, editorial
 - [x] **4 posts Instagram generados** (1080×1080, 300dpi):
