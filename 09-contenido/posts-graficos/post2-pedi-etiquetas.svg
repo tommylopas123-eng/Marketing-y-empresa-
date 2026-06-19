@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#0A0A0A"/>
+  <text x="540" y="330" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="68" font-weight="900" fill="#F4F4F2">PEDÍ TUS</text>
+  <text x="540" y="430" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="92" font-weight="900" fill="#C9A24B">ETIQUETAS</text>
+  <text x="540" y="525" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="92" font-weight="900" fill="#C9A24B">BORDADAS</text>
+  <path d="M270 555 q135 40 270 0 t270 0" fill="none" stroke="#F4F4F2"
+        stroke-width="3" stroke-dasharray="12 8" stroke-linecap="round" opacity="0.5"/>
+  <!-- bullets con tildes dibujados -->
+  <g stroke="#C9A24B" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 650 l14 16 l26 -32"/>
+    <path d="M300 710 l14 16 l26 -32"/>
+    <path d="M300 770 l14 16 l26 -32"/>
+  </g>
+  <text x="365" y="662" font-family="Arial, sans-serif" font-size="36" fill="#F4F4F2">Pedidos chicos y grandes</text>
+  <text x="365" y="722" font-family="Arial, sans-serif" font-size="36" fill="#F4F4F2">Producción local y rápida</text>
+  <text x="365" y="782" font-family="Arial, sans-serif" font-size="36" fill="#F4F4F2">Con el logo de tu marca</text>
+  <!-- CTA WhatsApp -->
+  <rect x="290" y="860" width="500" height="90" rx="45" fill="#C9A24B"/>
+  <text x="540" y="918" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="36" font-weight="bold" fill="#0A0A0A">WhatsApp 11 4475 6233</text>
+</svg>

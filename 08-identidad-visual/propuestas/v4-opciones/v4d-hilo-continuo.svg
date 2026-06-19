@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="#F4F4F2"/>
+  <!-- V4D: hilo de costura realista (puntada zigzag) cruzando -->
+  <text x="450" y="260" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="110" font-weight="900" letter-spacing="-2" fill="#0A0A0A">KORMAN</text>
+  <path d="M155 215 L205 200 L255 230 L305 200 L355 230 L405 200 L455 230 L505 200 L555 230 L605 200 L655 230 L705 200 L745 215"
+        fill="none" stroke="#C9A24B" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="155" cy="215" r="7" fill="#C9A24B"/>
+  <circle cx="745" cy="215" r="7" fill="#C9A24B"/>
+  <text x="450" y="320" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="24" letter-spacing="16" fill="#0A0A0A">ETIQUETAS BORDADAS</text>
+</svg>

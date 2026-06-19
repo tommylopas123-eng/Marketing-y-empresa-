@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="450" viewBox="0 0 1000 450">
+  <rect width="1000" height="450" fill="#FFFFFF"/>
+  <text x="500" y="235" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="115" font-weight="900" letter-spacing="-2" fill="#0A0A0A">KORMAN</text>
+  <path d="M195 188 q152 -45 305 0 t305 0" fill="none" stroke="#C9A24B"
+        stroke-width="4" stroke-dasharray="12 8" stroke-linecap="round"/>
+  <circle cx="195" cy="188" r="7" fill="#C9A24B"/>
+  <circle cx="805" cy="188" r="7" fill="#C9A24B"/>
+  <text x="500" y="298" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="25" letter-spacing="16" fill="#0A0A0A">ETIQUETAS BORDADAS</text>
+</svg>
