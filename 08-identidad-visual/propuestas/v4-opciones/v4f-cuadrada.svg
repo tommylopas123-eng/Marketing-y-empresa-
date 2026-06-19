@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#0A0A0A"/>
+  <!-- V4F: version cuadrada para foto de perfil, nombre apilado -->
+  <text x="300" y="250" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="84" font-weight="900" letter-spacing="-1" fill="#F4F4F2">KORMAN</text>
+  <path d="M120 210 q90 -32 180 0 t180 0" fill="none" stroke="#C9A24B"
+        stroke-width="4" stroke-dasharray="11 7" stroke-linecap="round"/>
+  <circle cx="120" cy="210" r="6" fill="#C9A24B"/>
+  <circle cx="480" cy="210" r="6" fill="#C9A24B"/>
+  <text x="300" y="320" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="22" letter-spacing="10" fill="#C9A24B">ETIQUETAS</text>
+  <text x="300" y="352" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="22" letter-spacing="10" fill="#C9A24B">BORDADAS</text>
+</svg>
