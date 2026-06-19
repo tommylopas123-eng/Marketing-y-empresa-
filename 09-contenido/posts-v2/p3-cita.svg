@@ -1,19 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
   <rect width="1080" height="1080" fill="#20201D"/>
-  <!-- textura sutil -->
   <g stroke="#FFFFFF" stroke-opacity="0.02" stroke-width="1">
     <line x1="0" y1="270" x2="1080" y2="270"/><line x1="0" y1="540" x2="1080" y2="540"/><line x1="0" y1="810" x2="1080" y2="810"/>
   </g>
-  <!-- comilla editorial -->
-  <text x="540" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="200" fill="#A9854E">“</text>
-  <!-- frase -->
-  <text x="540" y="540" text-anchor="middle" font-family="Georgia, serif" font-size="58" fill="#F1EBDE">No vendemos etiquetas.</text>
-  <text x="540" y="615" text-anchor="middle" font-family="Georgia, serif" font-size="58" font-style="italic" fill="#F1EBDE">Vestimos tu identidad.</text>
-  <!-- linea -->
-  <line x1="470" y1="700" x2="610" y2="700" stroke="#A9854E" stroke-width="1.5"/>
-  <!-- firma -->
-  <text x="540" y="780" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif"
-        font-size="32" font-weight="bold" letter-spacing="7" fill="#F1EBDE">KORMAN</text>
-  <text x="540" y="820" text-anchor="middle" font-family="Arial, sans-serif"
-        font-size="19" letter-spacing="5" fill="#A9854E">ETIQUETAS BORDADAS</text>
+  <!-- comilla -->
+  <text x="540" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="200" fill="#A9854E">“</text>
+  <!-- frase centrada -->
+  <text x="540" y="585" text-anchor="middle" font-family="Georgia, serif" font-size="60" fill="#F1EBDE">No vendemos etiquetas.</text>
+  <text x="540" y="665" text-anchor="middle" font-family="Georgia, serif" font-size="60" font-style="italic" fill="#F1EBDE">Vestimos tu identidad.</text>
+  <!-- acento -->
+  <line x1="490" y1="745" x2="590" y2="745" stroke="#A9854E" stroke-width="1.5"/>
 </svg>

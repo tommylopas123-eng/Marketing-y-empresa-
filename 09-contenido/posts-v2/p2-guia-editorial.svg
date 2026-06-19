@@ -7,19 +7,16 @@
     </pattern>
   </defs>
   <rect width="1080" height="1080" fill="url(#linen2)"/>
-  <!-- numero editorial grande -->
-  <text x="110" y="290" font-family="Georgia, serif" font-size="150" fill="#A9854E" fill-opacity="0.9">01</text>
-  <text x="118" y="345" font-family="Arial, sans-serif" font-size="22" letter-spacing="8" fill="#20201D" fill-opacity="0.6">GUÍA KORMAN</text>
-  <line x1="110" y1="400" x2="970" y2="400" stroke="#20201D" stroke-opacity="0.2" stroke-width="1.5"/>
-  <!-- titular -->
-  <text x="110" y="500" font-family="Georgia, serif" font-size="62" fill="#20201D">Por qué tu marca</text>
-  <text x="110" y="572" font-family="Georgia, serif" font-size="62" fill="#20201D">necesita su propia</text>
-  <text x="110" y="644" font-family="Georgia, serif" font-size="62" font-style="italic" fill="#A9854E">etiqueta.</text>
-  <!-- cuerpo -->
-  <text x="110" y="745" font-family="Arial, sans-serif" font-size="30" fill="#20201D" fill-opacity="0.8">Una etiqueta bordada con tu logo eleva la</text>
-  <text x="110" y="788" font-family="Arial, sans-serif" font-size="30" fill="#20201D" fill-opacity="0.8">percepción de tu prenda. Comunica calidad</text>
-  <text x="110" y="831" font-family="Arial, sans-serif" font-size="30" fill="#20201D" fill-opacity="0.8">antes de que el cliente lea una sola palabra.</text>
-  <!-- pie -->
-  <text x="110" y="950" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="bold" letter-spacing="5" fill="#20201D">KORMAN</text>
-  <text x="970" y="950" text-anchor="end" font-family="Arial, sans-serif" font-size="22" letter-spacing="2" fill="#A9854E">wa.me/5491144756233</text>
+  <!-- numero editorial centrado -->
+  <text x="540" y="290" text-anchor="middle" font-family="Georgia, serif" font-size="130" fill="#A9854E">01</text>
+  <text x="540" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" letter-spacing="9" fill="#20201D" fill-opacity="0.55">GUÍA</text>
+  <line x1="440" y1="395" x2="640" y2="395" stroke="#20201D" stroke-opacity="0.2" stroke-width="1.5"/>
+  <!-- titular centrado -->
+  <text x="540" y="510" text-anchor="middle" font-family="Georgia, serif" font-size="62" fill="#20201D">Por qué tu marca</text>
+  <text x="540" y="582" text-anchor="middle" font-family="Georgia, serif" font-size="62" fill="#20201D">necesita su propia</text>
+  <text x="540" y="654" text-anchor="middle" font-family="Georgia, serif" font-size="62" font-style="italic" fill="#A9854E">etiqueta.</text>
+  <!-- cuerpo centrado -->
+  <text x="540" y="770" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#20201D" fill-opacity="0.8">Una etiqueta bordada con tu logo eleva</text>
+  <text x="540" y="813" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#20201D" fill-opacity="0.8">la percepción de tu prenda. Comunica</text>
+  <text x="540" y="856" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#20201D" fill-opacity="0.8">calidad antes de la primera palabra.</text>
 </svg>

@@ -7,14 +7,12 @@
     </pattern>
   </defs>
   <rect width="1080" height="1080" fill="url(#linen3)"/>
-  <!-- marco foto -->
-  <rect x="90" y="90" width="900" height="660" fill="#20201D" fill-opacity="0.06" stroke="#20201D" stroke-opacity="0.3" stroke-width="1.5"/>
-  <!-- guias de esquina -->
-  <text x="540" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" letter-spacing="4" fill="#20201D" fill-opacity="0.45">[ TU FOTO DEL PRODUCTO ACÁ ]</text>
-  <text x="540" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#20201D" fill-opacity="0.35">primer plano de la etiqueta · buena luz · fondo limpio</text>
-  <!-- barra editorial inferior -->
-  <text x="90" y="850" font-family="Arial, sans-serif" font-size="20" letter-spacing="8" fill="#A9854E">TRABAJO · MARCA PRIVADA</text>
-  <text x="90" y="915" font-family="Georgia, serif" font-size="54" fill="#20201D">Etiquetas para</text>
-  <text x="90" y="975" font-family="Georgia, serif" font-size="54" font-style="italic" fill="#20201D">[nombre de la marca]</text>
-  <text x="990" y="975" text-anchor="end" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="bold" letter-spacing="4" fill="#20201D">KORMAN</text>
+  <!-- marco foto centrado -->
+  <rect x="120" y="120" width="840" height="640" fill="#20201D" fill-opacity="0.06" stroke="#20201D" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="540" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" letter-spacing="4" fill="#20201D" fill-opacity="0.45">[ TU FOTO DEL PRODUCTO ACÁ ]</text>
+  <text x="540" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#20201D" fill-opacity="0.35">primer plano · buena luz · fondo limpio</text>
+  <!-- caption centrado -->
+  <text x="540" y="855" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="8" fill="#A9854E">TRABAJO · MARCA PRIVADA</text>
+  <text x="540" y="925" text-anchor="middle" font-family="Georgia, serif" font-size="52" fill="#20201D">Etiquetas para</text>
+  <text x="540" y="985" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#20201D">[nombre de la marca]</text>
 </svg>
