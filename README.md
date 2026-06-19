@@ -24,6 +24,11 @@ la empresa de etiquetas bordadas.
 | [`03-plan-captacion.md`](./03-plan-captacion.md) | Acciones concretas, semana a semana |
 | [`04-materiales/`](./04-materiales/) | Textos listos para WhatsApp, Instagram, etc. |
 | [`05-glosario.md`](./05-glosario.md) | Palabras "raras" explicadas fácil |
+| [`06-auditoria-instagram.md`](./06-auditoria-instagram.md) | Diagnóstico y mejoras del Instagram |
+| [`08-identidad-visual/`](./08-identidad-visual/) | Logo, colores, tipografía, bio |
+| [`09-contenido/`](./09-contenido/) | Plan de contenido y posts diseñados |
+| [`10-whatsapp-y-ventas/`](./10-whatsapp-y-ventas/) | Catálogo, respuestas rápidas y presupuesto |
+| `.agents/product-marketing.md` | Documento maestro del negocio (base de todo) |
 
 ## ✅ Misión de esta semana
 
