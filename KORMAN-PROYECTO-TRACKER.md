@@ -52,9 +52,17 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 ## 📋 PRÓXIMO — FASE 1 (completar fundamentos)
 
 ### Esta semana
+- [ ] **Tommy decide qué etiqueta va en cada post** → Claude incorpora la foto real al post v4
 - [ ] **6 posts visuales restantes** del batch (educativo tipos de tejido, regalos/bebé, urgencia/temporada, antes/después, prueba social con clientes, objeción precio)
-- [ ] **Actualizar posts con logo** — agregar watermark de KORMAN a los 4 posts ya generados
-- [ ] **Cuando lleguen las fotos:** mejorarlas con image-enhancer y usarlas como base de posts reales
+- [ ] **Fotos del taller y máquinas suizas** → Tommy las pasa cuando pueda
+
+### Configurar Instagram API (pasos para Tommy)
+- [ ] **Paso 1:** Convertir @kormanetiquetas a cuenta Business en la app de Instagram (Configuración → Cuenta → Cambiar a cuenta profesional → Empresa)
+- [ ] **Paso 2:** Crear una Página de Facebook y vincularla a la cuenta de Instagram
+- [ ] **Paso 3:** Entrar a developers.facebook.com → Crear app → Tipo "Business" → Agregar producto "Instagram Graph API"
+- [ ] **Paso 4:** Generar token de acceso y pasárselo a Claude
+- [ ] **Paso 5:** Claude programa y publica los posts automáticamente desde ahí
+- *TikTok API no disponible para cuentas chicas — publicar manualmente por ahora*
 
 ### Política de precios (confirmado, no cambiar)
 - ❌ **Nunca publicar precio** — varía siempre por diseño, tejido, tamaño, terminación y cantidad
