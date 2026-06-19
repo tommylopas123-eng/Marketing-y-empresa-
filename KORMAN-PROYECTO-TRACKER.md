@@ -57,6 +57,14 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 - [ ] **6 posts visuales restantes** del batch (educativo tipos de tejido, regalos/bebé, urgencia/temporada, antes/después, prueba social con clientes, objeción precio)
 - [ ] **Fotos del taller y máquinas suizas** → Tommy las pasa cuando pueda
 
+### Perfil de Instagram — ✅ CONFIGURADO (19/06/2026)
+- [x] **Foto de perfil** — emblema oficial (casa negra, techo dorado, K blanca, aguja plata)
+- [x] **Nombre** — KORMAN Etiquetas
+- [x] **Bio** — "Tu marca, bordada con calidad profesional / 46 años de oficio / WhatsApp 👇"
+- [x] **Categoría** — Textile Company
+- [x] **Cuenta profesional** activada
+- [x] **Link de WhatsApp con mensaje automático** — `https://wa.me/5491144756233?text=Hola+quiero+informacion+de+las+etiquetas` (link largo; se puede acortar más adelante con acortar.link cuando se quiera ver más prolijo)
+
 ### Configurar Instagram API (pasos para Tommy)
 - [ ] **Paso 1:** Convertir @kormanetiquetas a cuenta Business en la app de Instagram (Configuración → Cuenta → Cambiar a cuenta profesional → Empresa)
 - [ ] **Paso 2:** Crear una Página de Facebook y vincularla a la cuenta de Instagram
