@@ -30,6 +30,7 @@ la empresa de etiquetas bordadas.
 | [`10-whatsapp-y-ventas/`](./10-whatsapp-y-ventas/) | Catálogo, respuestas rápidas y presupuesto |
 | [`11-captacion-clientes/`](./11-captacion-clientes/) | Guía para encontrar y contactar marcas + planilla |
 | [`12-guias/`](./12-guias/) | Cómo sacar fotos profesionales con el celular |
+| [`13-crecimiento/`](./13-crecimiento/) | Referidos, estructura de precios y oferta de primera compra |
 | `.agents/product-marketing.md` | Documento maestro del negocio (base de todo) |
 
 ## ✅ Misión de esta semana
