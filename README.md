@@ -28,6 +28,8 @@ la empresa de etiquetas bordadas.
 | [`08-identidad-visual/`](./08-identidad-visual/) | Logo, colores, tipografía, bio |
 | [`09-contenido/`](./09-contenido/) | Plan de contenido y posts diseñados |
 | [`10-whatsapp-y-ventas/`](./10-whatsapp-y-ventas/) | Catálogo, respuestas rápidas y presupuesto |
+| [`11-captacion-clientes/`](./11-captacion-clientes/) | Guía para encontrar y contactar marcas + planilla |
+| [`12-guias/`](./12-guias/) | Cómo sacar fotos profesionales con el celular |
 | `.agents/product-marketing.md` | Documento maestro del negocio (base de todo) |
 
 ## ✅ Misión de esta semana
