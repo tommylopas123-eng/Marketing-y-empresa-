@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <pattern id="linen2" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#F1EBDE"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#000000" stroke-opacity="0.035" stroke-width="1"/>
+      <line x1="0" y1="0" x2="6" y2="0" stroke="#000000" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#linen2)"/>
+  <!-- numero editorial grande -->
+  <text x="110" y="290" font-family="Georgia, serif" font-size="150" fill="#A9854E" fill-opacity="0.9">01</text>
+  <text x="118" y="345" font-family="Arial, sans-serif" font-size="22" letter-spacing="8" fill="#20201D" fill-opacity="0.6">GUÍA KORMAN</text>
+  <line x1="110" y1="400" x2="970" y2="400" stroke="#20201D" stroke-opacity="0.2" stroke-width="1.5"/>
+  <!-- titular -->
+  <text x="110" y="500" font-family="Georgia, serif" font-size="62" fill="#20201D">Por qué tu marca</text>
+  <text x="110" y="572" font-family="Georgia, serif" font-size="62" fill="#20201D">necesita su propia</text>
+  <text x="110" y="644" font-family="Georgia, serif" font-size="62" font-style="italic" fill="#A9854E">etiqueta.</text>
+  <!-- cuerpo -->
+  <text x="110" y="745" font-family="Arial, sans-serif" font-size="30" fill="#20201D" fill-opacity="0.8">Una etiqueta bordada con tu logo eleva la</text>
+  <text x="110" y="788" font-family="Arial, sans-serif" font-size="30" fill="#20201D" fill-opacity="0.8">percepción de tu prenda. Comunica calidad</text>
+  <text x="110" y="831" font-family="Arial, sans-serif" font-size="30" fill="#20201D" fill-opacity="0.8">antes de que el cliente lea una sola palabra.</text>
+  <!-- pie -->
+  <text x="110" y="950" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="bold" letter-spacing="5" fill="#20201D">KORMAN</text>
+  <text x="970" y="950" text-anchor="end" font-family="Arial, sans-serif" font-size="22" letter-spacing="2" fill="#A9854E">wa.me/5491144756233</text>
+</svg>
