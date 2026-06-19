@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#0A0A0A"/>
+  <!-- Monograma K moderno formado por "puntadas" -->
+  <g stroke="#F4F4F2" stroke-width="14" stroke-linecap="round" fill="none">
+    <line x1="320" y1="280" x2="320" y2="520"/>
+    <line x1="320" y1="400" x2="480" y2="280"/>
+    <line x1="320" y1="400" x2="480" y2="520"/>
+  </g>
+  <!-- punto/nudo dorado tipo aguja -->
+  <circle cx="480" cy="280" r="13" fill="#C9A24B"/>
+  <!-- nombre debajo -->
+  <text x="400" y="610" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="62" font-weight="800" letter-spacing="8" fill="#F4F4F2">KORMAN</text>
+  <text x="400" y="652" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="20" letter-spacing="10" fill="#C9A24B">ETIQUETAS BORDADAS</text>
+</svg>

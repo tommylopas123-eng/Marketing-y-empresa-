@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#F4F4F2"/>
+  <!-- Etiqueta tejida cosida a la tela (label woven) -->
+  <rect x="180" y="300" width="440" height="200" rx="10" fill="#0A0A0A"/>
+  <!-- puntadas de costura arriba y abajo (como cosida a la prenda) -->
+  <line x1="210" y1="322" x2="590" y2="322" stroke="#F4F4F2" stroke-width="3"
+        stroke-dasharray="2 16" stroke-linecap="round"/>
+  <line x1="210" y1="478" x2="590" y2="478" stroke="#F4F4F2" stroke-width="3"
+        stroke-dasharray="2 16" stroke-linecap="round"/>
+  <!-- nombre -->
+  <text x="400" y="388" text-anchor="middle" font-family="Georgia, serif"
+        font-size="72" font-weight="bold" letter-spacing="3" fill="#F4F4F2">KORMAN</text>
+  <text x="400" y="448" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="20" letter-spacing="7" fill="#C9A24B">ETIQUETAS BORDADAS</text>
+</svg>
