@@ -1,0 +1,61 @@
+name: Printmax SRL
+url: https://www.printmax.com.ar
+type: fábrica local
+location: Buenos Aires, Argentina
+
+positioning: >
+  Fábrica de etiquetas para la industria textil. Amplia gama de productos
+  (bordadas, estampadas, escudos, elásticos, badanas). Tono industrial y técnico.
+  Sin foco en emprendedores ni marcas chicas.
+
+target_audience:
+  - Empresas de indumentaria medianas y grandes
+  - Industria textil
+  - Fabricantes de calzado y marroquinería
+
+products:
+  - Etiquetas bordadas alta definición (tafeta)
+  - Etiquetas estampadas (fondo blanco, fondo color, algodón)
+  - Hang tags / colgantes
+  - Escudos bordados
+  - Elásticos bordados y sublimados
+  - Badanas grabado láser y bajo relieve
+  - Plastisol
+
+pricing:
+  visible: false
+  model: cotización por pedido
+  minimums: no publicado (orientado a volumen industrial)
+
+channels:
+  - Web con formulario de cotización
+  - Sin Instagram activo
+  - Sin WhatsApp visible
+
+strengths:
+  - Marca consolidada con años de trayectoria
+  - Gama muy amplia de productos
+  - Capacidad de producción industrial
+  - Múltiples materiales y terminaciones (hasta 7 colores)
+
+weaknesses:
+  - Sin precios visibles → alta fricción para emprendedores
+  - Sin presencia en Instagram (nula)
+  - Foco industrial, no habla el idioma del emprendedor
+  - No comunica flexibilidad en mínimos
+  - Web desactualizada y sin contenido visual atractivo
+
+common_complaints: []  # sin reviews públicas encontradas
+
+best_for:
+  - Empresas con pedidos altos y frecuentes
+  - Industria textil formal
+
+not_ideal_for:
+  - Marcas de ropa que arrancan
+  - Pedidos chicos
+  - Quien quiere asesoramiento y trato cercano
+
+korman_advantage_vs: >
+  KORMAN acepta pedidos chicos, tiene Instagram activo con trabajos reales,
+  da asesoramiento y tiene trato cercano. Printmax no habla con el emprendedor.
