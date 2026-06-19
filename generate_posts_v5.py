@@ -29,27 +29,17 @@ def fnt(name, size):
         return ImageFont.load_default()
 
 
-def tw(draw, text, font, tracking=0):
-    total = 0
-    for i, ch in enumerate(text):
-        b = draw.textbbox((0, 0), ch, font=font)
-        total += (b[2] - b[0])
-        if i < len(text) - 1:
-            total += tracking
-    return total
+def tw(draw, text, font):
+    b = draw.textbbox((0, 0), text, font=font)
+    return b[2] - b[0]
 
 
-def draw_t(draw, x, y, text, font, fill, tracking=0):
-    cursor = x
-    for ch in text:
-        draw.text((cursor, y), ch, font=font, fill=fill)
-        b = draw.textbbox((0, 0), ch, font=font)
-        cursor += (b[2] - b[0]) + tracking
-    return cursor
+def draw_t(draw, x, y, text, font, fill):
+    draw.text((x, y), text, font=font, fill=fill)
 
 
-def cx_t(draw, text, font, tracking=0):
-    return (W - tw(draw, text, font, tracking)) // 2
+def cx_t(draw, text, font):
+    return (W - tw(draw, text, font)) // 2
 
 
 def paste_label(img, png_name, cx, cy, max_w, max_h):
@@ -94,23 +84,23 @@ def make_post(filename, tipo, titulo, descripcion, png_label):
     # ── TIPO — texto pequeño arriba centrado ──────────────────────────────────
     f_tipo = fnt("Jura-Light.ttf", 13)
     tipo_y = 58
-    tipo_w = tw(draw, tipo, f_tipo, 1)
-    draw_t(draw, (W - tipo_w) // 2, tipo_y, tipo, f_tipo, GRAY_LT, 1)
+    tipo_w = tw(draw, tipo, f_tipo)
+    draw_t(draw, (W - tipo_w) // 2, tipo_y, tipo, f_tipo, GRAY_LT)
 
     # ── TÍTULO — grande, negro, tracking suave ────────────────────────────────
     f_title = fnt("BricolageGrotesque-Bold.ttf", 96)
-    while tw(draw, titulo, f_title, 0) > W - 120:
+    while tw(draw, titulo, f_title) > W - 120:
         sz = f_title.size - 4
         if sz < 48: break
         f_title = fnt("BricolageGrotesque-Bold.ttf", sz)
 
     titulo_y = tipo_y + 44
-    draw_t(draw, cx_t(draw, titulo, f_title, 0), titulo_y, titulo, f_title, BLACK, 0)
+    draw_t(draw, cx_t(draw, titulo, f_title), titulo_y, titulo, f_title, BLACK)
 
     # ── DESCRIPCIÓN — debajo del título, gris ────────────────────────────────
     f_desc = fnt("InstrumentSans-Regular.ttf", 20)
     desc_y = titulo_y + f_title.size + 16
-    draw_t(draw, cx_t(draw, descripcion, f_desc, 0), desc_y, descripcion, f_desc, GRAY_MD, 0)
+    draw_t(draw, cx_t(draw, descripcion, f_desc), desc_y, descripcion, f_desc, GRAY_MD)
 
     # ── ETIQUETA — protagonista, ocupa la mayor parte del post ───────────────
     # Zona disponible: desde desc_y + margen hasta arriba del brand mark
@@ -127,8 +117,8 @@ def make_post(filename, tipo, titulo, descripcion, png_label):
     # ── BRAND MARK — abajo centrado ───────────────────────────────────────────
     f_brand = fnt("BricolageGrotesque-Bold.ttf", 13)
     brand   = "KORMAN ETIQUETAS"
-    bw      = tw(draw, brand, f_brand, 1)
-    draw_t(draw, (W - bw) // 2, H - 54, brand, f_brand, BLACK, 1)
+    bw      = tw(draw, brand, f_brand)
+    draw_t(draw, (W - bw) // 2, H - 54, brand, f_brand, BLACK)
 
     # ── LÍNEA DECORATIVA FINA bajo el brand — detalle elegante ───────────────
     line_y = H - 38
