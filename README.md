@@ -31,6 +31,7 @@ la empresa de etiquetas bordadas.
 | [`11-captacion-clientes/`](./11-captacion-clientes/) | Guía para encontrar y contactar marcas + planilla |
 | [`12-guias/`](./12-guias/) | Cómo sacar fotos profesionales con el celular |
 | [`13-crecimiento/`](./13-crecimiento/) | Referidos, estructura de precios y oferta de primera compra |
+| [`14-plan-90-dias/`](./14-plan-90-dias/) | Calendario de 90 días con las 4 redes integradas |
 | `.agents/product-marketing.md` | Documento maestro del negocio (base de todo) |
 
 ## ✅ Misión de esta semana
