@@ -55,10 +55,9 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 - [ ] **Actualizar posts con logo** — agregar watermark de KORMAN a los 4 posts ya generados
 - [ ] **Cuando lleguen las fotos:** mejorarlas con image-enhancer y usarlas como base de posts reales
 
-### Cuando tengamos los precios confirmados
-- [ ] **Post de precio orientativo** — "desde $X" — el más pedido por emprendedoras
-- [ ] **Completar tabla comparativa** con precios reales vs competencia
-- [ ] **Actualizar templates de WhatsApp** con el rango de precios
+### Política de precios (confirmado, no cambiar)
+- ❌ **Nunca publicar precio** — varía siempre por diseño, tejido, tamaño, terminación y cantidad
+- ✅ Toda consulta de precio → derivar al WhatsApp a cotizar individualmente
 
 ### Cuando tengamos testimonios
 - [ ] **Post de prueba social** con citas de clientes

@@ -150,6 +150,9 @@ Cercano, argentino, cálido pero profesional. Con orgullo de oficio. Nunca corpo
 | WhatsApp wa.me/5491144756233 | Canal principal de venta | Convertir consultas en pedidos |
 | Web | No tiene | Pendiente |
 
+### Política de precios
+**NUNCA se publica precio.** El precio varía siempre según diseño, tipo de tejido, tamaño, terminación y cantidad. Toda consulta de precio se deriva al WhatsApp para cotizar individualmente. Esto aplica a Instagram, web, y cualquier canal público.
+
 ### Meta de negocio
 Salir de la dependencia del boca a boca → generar flujo constante de clientes nuevos.
 **Meta concreta:** 5 marcas de ropa nuevas como clientes en 3 meses.
