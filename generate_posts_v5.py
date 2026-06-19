@@ -94,18 +94,18 @@ def make_post(filename, tipo, titulo, descripcion, png_label):
     # ── TIPO — texto pequeño arriba centrado ──────────────────────────────────
     f_tipo = fnt("Jura-Light.ttf", 13)
     tipo_y = 58
-    tipo_w = tw(draw, tipo, f_tipo, 5)
-    draw_t(draw, (W - tipo_w) // 2, tipo_y, tipo, f_tipo, GRAY_LT, 5)
+    tipo_w = tw(draw, tipo, f_tipo, 1)
+    draw_t(draw, (W - tipo_w) // 2, tipo_y, tipo, f_tipo, GRAY_LT, 1)
 
     # ── TÍTULO — grande, negro, tracking suave ────────────────────────────────
     f_title = fnt("BricolageGrotesque-Bold.ttf", 96)
-    while tw(draw, titulo, f_title, 2) > W - 120:
+    while tw(draw, titulo, f_title, 0) > W - 120:
         sz = f_title.size - 4
         if sz < 48: break
         f_title = fnt("BricolageGrotesque-Bold.ttf", sz)
 
     titulo_y = tipo_y + 44
-    draw_t(draw, cx_t(draw, titulo, f_title, 2), titulo_y, titulo, f_title, BLACK, 2)
+    draw_t(draw, cx_t(draw, titulo, f_title, 0), titulo_y, titulo, f_title, BLACK, 0)
 
     # ── DESCRIPCIÓN — debajo del título, gris ────────────────────────────────
     f_desc = fnt("InstrumentSans-Regular.ttf", 20)
@@ -127,8 +127,8 @@ def make_post(filename, tipo, titulo, descripcion, png_label):
     # ── BRAND MARK — abajo centrado ───────────────────────────────────────────
     f_brand = fnt("BricolageGrotesque-Bold.ttf", 13)
     brand   = "KORMAN ETIQUETAS"
-    bw      = tw(draw, brand, f_brand, 3)
-    draw_t(draw, (W - bw) // 2, H - 54, brand, f_brand, BLACK, 3)
+    bw      = tw(draw, brand, f_brand, 1)
+    draw_t(draw, (W - bw) // 2, H - 54, brand, f_brand, BLACK, 1)
 
     # ── LÍNEA DECORATIVA FINA bajo el brand — detalle elegante ───────────────
     line_y = H - 38
