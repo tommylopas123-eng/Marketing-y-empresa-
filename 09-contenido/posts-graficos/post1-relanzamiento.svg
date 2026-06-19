@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#0A0A0A"/>
+  <!-- marco de puntadas -->
+  <rect x="70" y="70" width="940" height="940" rx="24" fill="none"
+        stroke="#C9A24B" stroke-width="3" stroke-dasharray="14 11" stroke-linecap="round" opacity="0.7"/>
+  <!-- bajada superior -->
+  <text x="540" y="380" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="34" letter-spacing="6" fill="#C9A24B">NUEVA IMAGEN · MISMA CALIDAD</text>
+  <!-- nombre -->
+  <text x="540" y="540" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="170" font-weight="900" letter-spacing="-4" fill="#F4F4F2">KORMAN</text>
+  <path d="M250 472 q145 -48 290 0 t290 0" fill="none" stroke="#C9A24B"
+        stroke-width="5" stroke-dasharray="14 9" stroke-linecap="round"/>
+  <circle cx="250" cy="472" r="9" fill="#C9A24B"/>
+  <circle cx="830" cy="472" r="9" fill="#C9A24B"/>
+  <text x="540" y="610" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="40" letter-spacing="22" fill="#C9A24B">ETIQUETAS BORDADAS</text>
+  <!-- pie -->
+  <text x="540" y="800" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="30" letter-spacing="2" fill="#F4F4F2">Marca privada · Tejidas · Personalizadas</text>
+  <text x="540" y="870" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="28" letter-spacing="2" fill="#9A9A9A">Colegiales, CABA · Envíos a todo el país</text>
+</svg>
