@@ -68,6 +68,34 @@ def cx_tracked(text, font, draw, tracking=0):
     return (W - tracked_width(draw, text, font, tracking)) // 2
 
 
+FOTOS_DIR = "/home/user/Marketing-y-empresa-/assets/fotos-procesadas/"
+
+def place_photo(img, photo_path, y_start, y_end):
+    """Coloca una foto procesada (fondo negro) en la zona inferior del post."""
+    zone_w = W
+    zone_h = y_end - y_start
+
+    # Fondo de zona
+    zone = Image.new("RGB", (zone_w, zone_h), PHOTO_BG)
+
+    try:
+        ph = Image.open(photo_path).convert("RGB")
+        # Escalar para llenar la zona manteniendo proporción
+        ph_w, ph_h = ph.size
+        scale = min(zone_w / ph_w, zone_h / ph_h)
+        new_w = int(ph_w * scale)
+        new_h = int(ph_h * scale)
+        ph = ph.resize((new_w, new_h), Image.LANCZOS)
+        # Centrar
+        x_off = (zone_w - new_w) // 2
+        y_off = (zone_h - new_h) // 2
+        zone.paste(ph, (x_off, y_off))
+    except Exception as e:
+        print(f"  [warn] foto no encontrada: {e}")
+
+    img.paste(zone, (0, y_start))
+
+
 def draw_photo_placeholder(draw, y_start, y_end, label="FOTO"):
     """Zona de foto: fondo oscuro, cruz central, texto sutil."""
     draw.rectangle([0, y_start, W, y_end], fill=PHOTO_BG)
@@ -111,7 +139,7 @@ def draw_thin_rule(draw, y, x0=60, x1=None):
 # POST TIPO ESTÁNDAR — texto arriba, foto abajo
 # ─────────────────────────────────────────────────────────────────────────────
 
-def make_post_standard(filename, title, subtitle, label, photo_pct=0.52):
+def make_post_standard(filename, title, subtitle, label, photo_pct=0.52, photo_file=None):
     img  = Image.new("RGB", (W, H), BLACK)
     draw = ImageDraw.Draw(img)
 
@@ -161,7 +189,11 @@ def make_post_standard(filename, title, subtitle, label, photo_pct=0.52):
     draw_thin_rule(draw, sep_y - 1)
 
     # ── ZONA DE FOTO ───────────────────────────────────────────────────────
-    draw_photo_placeholder(draw, sep_y, H, "FOTO")
+    if photo_file:
+        place_photo(img, FOTOS_DIR + photo_file, sep_y, H)
+        draw = ImageDraw.Draw(img)  # re-bind draw tras paste
+    else:
+        draw_photo_placeholder(draw, sep_y, H, "FOTO")
 
     # ── MARCA ──────────────────────────────────────────────────────────────
     draw_brand_mark(draw, H - 32)
@@ -226,7 +258,8 @@ def post_historia_1980():
     draw_thin_rule(draw, sep_y - 1)
 
     # Zona foto (taller histórico)
-    draw_photo_placeholder(draw, sep_y, H, "FOTO TALLER")
+    place_photo(img, FOTOS_DIR + "pierre-cardin-negro.jpg", sep_y, H)
+    draw = ImageDraw.Draw(img)
 
     draw_brand_mark(draw, H - 32)
 
@@ -272,7 +305,8 @@ def post_historia_46():
     draw_thin_rule(draw, sep_y - 1)
 
     # Zona foto
-    draw_photo_placeholder(draw, sep_y, H, "FOTO")
+    place_photo(img, FOTOS_DIR + "beditorial-editorial-negro.jpg", sep_y, H)
+    draw = ImageDraw.Draw(img)
 
     draw_brand_mark(draw, H - 32)
 
@@ -290,6 +324,7 @@ make_post_standard(
     subtitle = "Económica  ·  para etiquetas internas",
     label    = "ETIQUETA BORDADA  ·  01",
     photo_pct= 0.55,
+    photo_file= "nxlevel-negro.jpg",
 )
 
 make_post_standard(
@@ -298,6 +333,7 @@ make_post_standard(
     subtitle = "Nítida  ·  colores intensos  ·  la más elegida",
     label    = "ETIQUETA BORDADA  ·  02",
     photo_pct= 0.52,
+    photo_file= "givenchy-denim-negro.jpg",
 )
 
 make_post_standard(
@@ -306,6 +342,7 @@ make_post_standard(
     subtitle = "Mayor relieve  ·  presencia  ·  efecto premium",
     label    = "ETIQUETA BORDADA  ·  03",
     photo_pct= 0.52,
+    photo_file= "balmain-cadena-negro.jpg",
 )
 
 make_post_standard(
@@ -314,6 +351,7 @@ make_post_standard(
     subtitle = "Relieve especial  ·  para marcas que se diferencian",
     label    = "ETIQUETA BORDADA  ·  04",
     photo_pct= 0.52,
+    photo_file= "camps-1983-abanico-negro.jpg",
 )
 
 post_historia_1980()
