@@ -1,4 +1,4 @@
-# KORMAN — Contexto completo de la empresa
+# KORMAN ETIQUETAS — Contexto completo de la empresa
 *Leer este archivo al inicio de cada chat nuevo para entender todo.*
 *Última actualización: 19/06/2026*
 
@@ -36,7 +36,7 @@ Etiquetas tejidas personalizadas con el logo, nombre o diseño del cliente, para
 
 ### Proceso de pedido
 1. Cliente manda logo/diseño
-2. KORMAN hace **boceto digital a escala real** con colores de producción
+2. KORMAN ETIQUETAS hace **boceto digital a escala real** con colores de producción
 3. Cliente aprueba el boceto
 4. Producción → entrega en **15 a 20 días** (más en temporada alta)
 5. No se hace muestra física salvo pedido especial
@@ -79,7 +79,7 @@ Sugar · Tomineto · Clotti · Veli · Nicole Jeans · Aripa · Fashion (China's
 ## LA COMPETENCIA
 
 ### Competidores directos con web
-| Competidor | URL | Fortaleza | Debilidad vs KORMAN |
+| Competidor | URL | Fortaleza | Debilidad vs KORMAN ETIQUETAS |
 |------------|-----|-----------|---------------------|
 | Printmax SRL | printmax.com.ar | Marca consolidada, gama amplia | Sin IG, sin precios visibles, foco industrial no emprendedor |
 | BestLabels | bestlabels.ar | Precio visible, mínimo 100u, e-commerce | Internacional, sin producción local, sin asesoramiento |
@@ -89,7 +89,7 @@ Sugar · Tomineto · Clotti · Veli · Nicole Jeans · Aripa · Fashion (China's
 - **Vendedores en Instagram (informales):** mínimos en metros (400-500m), calidad variable, sin garantía de plazos
 
 ### Nuestra ventaja vs China (el argumento más fuerte)
-China parece más barato por unidad, pero: mínimos enormes, 2-3 meses de espera, sin revisión de muestra previa, riesgo de recibir algo diferente a lo pedido. KORMAN: pedidos chicos, 15-20 días, boceto aprobado antes de producir.
+China parece más barato por unidad, pero: mínimos enormes, 2-3 meses de espera, sin revisión de muestra previa, riesgo de recibir algo diferente a lo pedido. KORMAN ETIQUETAS: pedidos chicos, 15-20 días, boceto aprobado antes de producir.
 
 ---
 

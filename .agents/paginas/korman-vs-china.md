@@ -1,4 +1,4 @@
-# KORMAN vs Importar desde China — Página de comparación
+# KORMAN ETIQUETAS vs Importar desde China — Página de comparación
 *URL sugerida: /korman-vs-china o /alternativa-a-etiquetas-de-china*
 *Keywords objetivo: "etiquetas bordadas argentina vs china", "importar etiquetas ropa argentina", "etiquetas bordadas locales vs importadas"*
 *Creado: 19/06/2026*
@@ -7,7 +7,7 @@
 
 ## Meta tags
 
-**Title:** KORMAN vs Importar etiquetas desde China | ¿Qué conviene para tu marca?
+**Title:** KORMAN ETIQUETAS vs Importar etiquetas desde China | ¿Qué conviene para tu marca?
 **Description:** Importar etiquetas bordadas desde China parece más barato. Pero ¿lo es realmente? Comparamos costos, tiempos y riesgos para que decidas con información.
 
 ---
@@ -18,7 +18,7 @@
 
 ### TL;DR
 
-Importar desde China es tentador por el precio unitario. Pero para una marca de ropa que arranca o que produce en cantidades chicas, los mínimos enormes, las demoras de 60 a 90 días y el riesgo de recibir algo diferente a lo pedido hacen que la cuenta no cierre. KORMAN produce en CABA, acepta pedidos chicos y te muestra la muestra antes de producir todo.
+Importar desde China es tentador por el precio unitario. Pero para una marca de ropa que arranca o que produce en cantidades chicas, los mínimos enormes, las demoras de 60 a 90 días y el riesgo de recibir algo diferente a lo pedido hacen que la cuenta no cierre. KORMAN ETIQUETAS produce en CABA, acepta pedidos chicos y te muestra la muestra antes de producir todo.
 
 ---
 
@@ -32,7 +32,7 @@ Pero la mayoría de las marcas de ropa que buscan etiquetas bordadas no son eso.
 
 ### La comparación honesta
 
-| | **KORMAN** | **Importar desde China** |
+| | **KORMAN ETIQUETAS** | **Importar desde China** |
 |---|---|---|
 | **Mínimo de pedido** | Chico (pedís lo que necesitás) | 500 a 1.000+ unidades |
 | **Tiempo de entrega** | Plazos cortos, producción local | 60 a 90 días (más trámites) |
@@ -64,9 +64,9 @@ Si ese es tu caso, seguramente ya tenés proveedor y este artículo no es para v
 
 ---
 
-### Cuándo KORMAN es la opción correcta
+### Cuándo KORMAN ETIQUETAS es la opción correcta
 
-KORMAN es para vos si:
+KORMAN ETIQUETAS es para vos si:
 
 - Estás arrancando y necesitás pocos cientos de etiquetas para tu primera colección.
 - Tenés un lanzamiento con fecha y no podés esperar 3 meses.
@@ -82,7 +82,7 @@ KORMAN es para vos si:
 
 ---
 
-### Hacé tu primera etiqueta con KORMAN
+### Hacé tu primera etiqueta con KORMAN ETIQUETAS
 
 No necesitás saber exactamente qué querés. Con tu logo y una idea del tamaño, arrancamos.
 

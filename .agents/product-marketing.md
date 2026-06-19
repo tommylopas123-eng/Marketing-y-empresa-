@@ -4,7 +4,7 @@
 
 ## Product Overview
 **One-liner:** Etiquetas tejidas personalizadas para marcas de ropa y proyectos personales. 46 años de trayectoria, maquinaria suiza, producción en CABA.
-**Qué hace:** KORMAN fabrica etiquetas tejidas (también llamadas bordadas — son lo mismo: se parten del hilado y se tejen) personalizadas con el logo o nombre del cliente. Trabaja tanto con marcas de indumentaria (marca privada) como con particulares.
+**Qué hace:** KORMAN ETIQUETAS fabrica etiquetas tejidas (también llamadas bordadas — son lo mismo: se parten del hilado y se tejen) personalizadas con el logo o nombre del cliente. Trabaja tanto con marcas de indumentaria (marca privada) como con particulares.
 **Aclaración técnica importante:** "Bordadas" y "tejidas" son el mismo producto en la industria. Todo parte del hilado y se teje. La diferencia está en la calidad/densidad del tejido.
 **Categoría:** Insumos textiles / etiquetas tejidas para indumentaria.
 **Tipo de producto:** Fabricación a pedido. Maquinaria suiza de alta tecnología. 46 años de empresa.
@@ -68,10 +68,10 @@
 ## Differentiation
 **Diferenciadores clave:**
 - Calidad y terminación del bordado (oficio y experiencia).
-- **Acepta pedidos chicos** → ideal para marcas que recién arrancan (y crecen con KORMAN).
+- **Acepta pedidos chicos** → ideal para marcas que recién arrancan (y crecen con KORMAN ETIQUETAS).
 - Cumplimiento de plazos y trato cercano/asesoramiento.
 - Producción local en CABA (a diferencia de importar): más rápido, revisás muestra, hablás con quien lo hace.
-**Por qué eligen KORMAN:** calidad de marca grande, con la flexibilidad y cercanía de un taller local.
+**Por qué eligen KORMAN ETIQUETAS:** calidad de marca grande, con la flexibilidad y cercanía de un taller local.
 
 ## Objections
 | Objeción | Respuesta |

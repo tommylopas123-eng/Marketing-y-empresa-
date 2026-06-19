@@ -1,4 +1,4 @@
-# Templates de WhatsApp — KORMAN
+# Templates de WhatsApp — KORMAN ETIQUETAS
 *Para convertir consultas en pedidos*
 *Creado: 19/06/2026*
 
@@ -16,7 +16,7 @@ Objetivo de cada intercambio: llevar al cliente a pedir presupuesto → primera 
 **Cuándo usar:** Cuando alguien escribe "hola, quiero información" o similar.
 
 ```
-¡Hola [nombre]! 👋 Bienvenido a KORMAN.
+¡Hola [nombre]! 👋 Bienvenido a KORMAN ETIQUETAS.
 
 Hacemos etiquetas bordadas personalizadas para marcas de ropa.
 Cuéntame un poco más:

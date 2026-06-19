@@ -1,4 +1,4 @@
-# KORMAN — Tracker del proyecto
+# KORMAN ETIQUETAS — Tracker del proyecto
 *Qué hicimos, qué estamos haciendo, qué sigue.*
 *Última actualización: 19/06/2026*
 
@@ -6,7 +6,7 @@
 
 ## ESTADO ACTUAL: FASE 1 — FUNDAMENTOS
 
-Estamos construyendo la base de marketing de KORMAN desde cero:
+Estamos construyendo la base de marketing de KORMAN ETIQUETAS desde cero:
 identidad visual, contenido estratégico e infraestructura de comunicación.
 
 ---
@@ -19,8 +19,8 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 - [x] **Perfiles YAML de competidores** — Printmax, BestLabels, China. Fuente de verdad centralizada.
 
 ### Identidad visual
-- [x] **Logo/emblema KORMAN aprobado (foto de perfil)** — emblema hexagonal estilo "casa": hexágono negro, techo dorado, **K** grande blanca, **aguja plateada** atravesando en diagonal con ojo e hilo. Archivo oficial: `assets/korman-logo-oficial.jpg` (= `assets/korman-instagram-profile.jpg`). Versión elegida: hilo plata. *Tentativo — se puede revisar el color del hilo más adelante.*
-- [x] **Logo KORMAN wordmark** — wordmark puro, BricolageGrotesque Bold, negro/blanco, sin ícono (uso secundario)
+- [x] **Logo/emblema KORMAN ETIQUETAS aprobado (foto de perfil)** — emblema hexagonal estilo "casa": hexágono negro, techo dorado, **K** grande blanca, **aguja plateada** atravesando en diagonal con ojo e hilo. Archivo oficial: `assets/korman-logo-oficial.jpg` (= `assets/korman-instagram-profile.jpg`). Versión elegida: hilo plata. *Tentativo — se puede revisar el color del hilo más adelante.*
+- [x] **Logo KORMAN ETIQUETAS wordmark** — wordmark puro, BricolageGrotesque Bold, negro/blanco, sin ícono (uso secundario)
 - [x] **5 versiones del logo** — horizontal blanco, horizontal negro, avatar IG, watermarks transparentes
 - [x] **Filosofía visual "Hilo Nocturno"** — oscuro, dorado, patrones de tejido, editorial
 - [x] **4 posts Instagram generados** (1080×1080, 300dpi):
@@ -32,7 +32,7 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 ### Contenido y copy
 - [x] **10 captions de Instagram listos** con hashtags (batch-01-diferenciadores.md)
 - [x] **8 templates de WhatsApp** para convertir consultas en pedidos
-- [x] **Página de comparación** "KORMAN vs Importar desde China" (copy completo)
+- [x] **Página de comparación** "KORMAN ETIQUETAS vs Importar desde China" (copy completo)
 - [x] **Calendario de publicación** — 4 semanas, 2-3 posts/semana
 
 ### Skills y herramientas instaladas
@@ -79,7 +79,7 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 
 ### Cuando tengamos testimonios
 - [ ] **Post de prueba social** con citas de clientes
-- [ ] **Stories highlight** de marcas que confiaron en KORMAN
+- [ ] **Stories highlight** de marcas que confiaron en KORMAN ETIQUETAS
 
 ---
 
@@ -93,15 +93,15 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 - [ ] Responder comentarios y DMs con los templates de WA
 
 ### Contenido SEO
-- [ ] Publicar página "KORMAN vs Importar desde China"
-- [ ] Segunda página de comparación: "KORMAN vs etiquetas genéricas"
+- [ ] Publicar página "KORMAN ETIQUETAS vs Importar desde China"
+- [ ] Segunda página de comparación: "KORMAN ETIQUETAS vs etiquetas genéricas"
 - [ ] Blog/nota: "Cómo elegir la etiqueta para tu marca de ropa"
 - [ ] Guía: "Tipos de etiquetas tejidas — cuál es la indicada para tu proyecto"
 
 ### Captación de clientes
 - [ ] Definir estrategia de outreach: DMs a emprendedoras de ropa en IG
 - [ ] Identificar 50 cuentas de marcas de ropa emprendedoras en CABA para contactar
-- [ ] Script de DM frío para presentar KORMAN
+- [ ] Script de DM frío para presentar KORMAN ETIQUETAS
 - [ ] Seguimiento de las consultas abiertas
 
 ---
@@ -150,6 +150,6 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 - Creada página de comparación vs China
 - Instaladas 4 skills de diseño (awesome-claude-skills)
 - Generados 4 posts visuales Instagram
-- Diseñado y aprobado logo KORMAN v2 (wordmark puro)
+- Diseñado y aprobado logo KORMAN ETIQUETAS v2 (wordmark puro)
 - Confirmados datos de empresa con el dueño: 46 años, maquinaria suiza, tipos de tejido, plazos, clientes autorizados
 - Creados documentos de contexto y tracker (este archivo)

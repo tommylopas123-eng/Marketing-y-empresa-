@@ -10,7 +10,7 @@ El mercado de etiquetas bordadas en Argentina tiene tres tipos de jugadores:
 2. **Vendedores en Instagram** (muchos): competencia directa en el segmento emprendedor, pero informalidad alta.
 3. **Importación** (China, genéricos): barato pero con mínimos enormes y demoras.
 
-**Oportunidad de KORMAN**: el nicho de marcas emprendedoras que arrancan (pedidos chicos + calidad + producción local + trato cercano) está mal atendido por los jugadores formales.
+**Oportunidad de KORMAN ETIQUETAS**: el nicho de marcas emprendedoras que arrancan (pedidos chicos + calidad + producción local + trato cercano) está mal atendido por los jugadores formales.
 
 ---
 
@@ -35,7 +35,7 @@ El mercado de etiquetas bordadas en Argentina tiene tres tipos de jugadores:
 
 **Canales:** Web + formulario de cotización.
 
-**Debilidades vs KORMAN:**
+**Debilidades vs KORMAN ETIQUETAS:**
 - Sin precio visible → fricción para emprendedores que quieren saber rápido.
 - Web anticuada, sin presencia activa en Instagram.
 - Foco en industria, no en el emprendedor que arranca.
@@ -65,7 +65,7 @@ El mercado de etiquetas bordadas en Argentina tiene tres tipos de jugadores:
 
 **Posicionamiento:** Catálogo amplio, compra online, entrega rápida. Apunta a todo tipo de cliente.
 
-**Debilidades vs KORMAN:**
+**Debilidades vs KORMAN ETIQUETAS:**
 - Es una operación global/industrial, no local de CABA. Sin producción propia argentina.
 - Productos de catálogo estándar → menos personalización real.
 - Sin asesoramiento humano ni trato cercano.
@@ -89,7 +89,7 @@ El mercado de etiquetas bordadas en Argentina tiene tres tipos de jugadores:
 
 **Posicionamiento:** Precio bajo, informalidad, demoras variables.
 
-**Debilidades vs KORMAN:**
+**Debilidades vs KORMAN ETIQUETAS:**
 - Mínimos en metros (confuso, el emprendedor piensa en "etiquetas").
 - Baja profesionalidad en presentación.
 - Confiabilidad y cumplimiento de plazos inciertos.
@@ -102,7 +102,7 @@ El mercado de etiquetas bordadas en Argentina tiene tres tipos de jugadores:
 
 **Precios:** Desde 30 etiquetas a USD 17 (~$17.000 ARS aprox).
 
-**Debilidades vs KORMAN:**
+**Debilidades vs KORMAN ETIQUETAS:**
 - Envío internacional: demoras y costo logístico.
 - Sin asesoramiento local.
 - No conoce el mercado argentino.
@@ -113,7 +113,7 @@ El mercado de etiquetas bordadas en Argentina tiene tres tipos de jugadores:
 
 **Canal:** AliExpress, proveedores directos.
 
-**Debilidades vs KORMAN:**
+**Debilidades vs KORMAN ETIQUETAS:**
 - Mínimos enormes (miles de unidades).
 - Demoras: 30-90 días.
 - Sin revisión de muestra previa local.
@@ -123,7 +123,7 @@ El mercado de etiquetas bordadas en Argentina tiene tres tipos de jugadores:
 
 ## Tabla comparativa
 
-| | **KORMAN** | **Printmax** | **BestLabels** | **IG sellers** | **China** |
+| | **KORMAN ETIQUETAS** | **Printmax** | **BestLabels** | **IG sellers** | **China** |
 |---|---|---|---|---|---|
 | **Producción** | Local CABA | Local BA | Internacional | Variable | China |
 | **Mínimo pedido** | Chico [confirmar] | N/D (industria) | 100 u | 400-500 m | Miles |
@@ -137,21 +137,21 @@ El mercado de etiquetas bordadas en Argentina tiene tres tipos de jugadores:
 
 ---
 
-## Oportunidades de diferenciación para KORMAN
+## Oportunidades de diferenciación para KORMAN ETIQUETAS
 
 ### 1. Publicar precios (aunque sea orientativos)
-BestLabels es el único que tiene precios visibles → atrae al emprendedor que no quiere hacer un proceso de cotización largo. KORMAN podría publicar un precio base ("desde $X / 50 unidades") para reducir la fricción de contacto inicial.
+BestLabels es el único que tiene precios visibles → atrae al emprendedor que no quiere hacer un proceso de cotización largo. KORMAN ETIQUETAS podría publicar un precio base ("desde $X / 50 unidades") para reducir la fricción de contacto inicial.
 
 ### 2. Comunicar el mínimo bajo como ventaja central
-Ningún competidor formal lo grita. KORMAN debe poner "SIN mínimo alto" o "desde X unidades" en el centro de su comunicación de Instagram.
+Ningún competidor formal lo grita. KORMAN ETIQUETAS debe poner "SIN mínimo alto" o "desde X unidades" en el centro de su comunicación de Instagram.
 
 ### 3. Mostrar el proceso y la producción local
 Printmax no tiene Instagram activo. Los clientes de emprendedoras valoran ver quién hace sus etiquetas. Videos del proceso → confianza → conversión.
 
 ### 4. Hablar de "marca privada" y "tu logo" (no de "etiquetas")
-El cliente emprendedor no busca "etiqueta bordada industrial" — busca "que mi marca se vea profesional". El lenguaje de KORMAN ya está bien orientado; hay que reforzarlo.
+El cliente emprendedor no busca "etiqueta bordada industrial" — busca "que mi marca se vea profesional". El lenguaje de KORMAN ETIQUETAS ya está bien orientado; hay que reforzarlo.
 
-### 5. Testimoniales de marcas que crecieron con KORMAN
+### 5. Testimoniales de marcas que crecieron con KORMAN ETIQUETAS
 Sugar, Tomineto, Clotti, Veli, Nicole Jeans, Aripa → pedir reseñas. Un emprendedor que arranca confía más en otro emprendedor que en una fábrica.
 
 ### 6. Pack de inicio para nuevas marcas
@@ -174,7 +174,7 @@ Ningún competidor lo ofrece explícitamente. "Tu primera etiqueta" o "Kit de ma
 
 ## Próximos pasos recomendados
 
-1. **Confirmar** precios y mínimos reales de KORMAN para completar la tabla comparativa.
-2. **Armar página de competencia** (formato "KORMAN vs importar desde China" + "KORMAN vs etiquetas genéricas").
+1. **Confirmar** precios y mínimos reales de KORMAN ETIQUETAS para completar la tabla comparativa.
+2. **Armar página de competencia** (formato "KORMAN ETIQUETAS vs importar desde China" + "KORMAN ETIQUETAS vs etiquetas genéricas").
 3. **Crear contenido de Instagram** que explote los diferenciales detectados: mínimo bajo, producción local, trato cercano, calidad.
 4. **Pedir reseñas** a las marcas ya mencionadas como clientes.

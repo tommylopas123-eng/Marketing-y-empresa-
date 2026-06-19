@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-KORMAN ETIQUETAS — Posts v5
-Fondo blanco roto. Etiqueta como protagonista. Tipografía limpia.
-Sin líneas separadoras, sin numeración, sin zonas diferenciadas.
+KORMAN ETIQUETAS — Posts v5 (estilo nuevo, conjunto con la presentación)
+Fondo de tejido diagonal sutil. Detalle dorado. Tipografía BigShoulders.
+Etiqueta como protagonista. Sin líneas separadoras, sin numeración.
 """
 from PIL import Image, ImageDraw, ImageFont
 import os
@@ -14,12 +14,12 @@ os.makedirs(OUT, exist_ok=True)
 
 W = H = 1080
 
-# Paleta — fondo claro, texto oscuro
-BG       = (252, 250, 246)   # blanco roto — color de marca
-BLACK    = (8,   8,   8  )   # negro puro — texto principal
-GRAY_MD  = (110, 108, 104)   # subtítulo
-GRAY_LT  = (180, 178, 174)   # detalle sutil
-ACCENT   = (8,   8,   8  )   # acento — negro (el logo es negro)
+BG      = (252, 250, 246)   # blanco roto — color de marca
+BLACK   = (8,   8,   8  )
+GRAY_MD = (110, 108, 104)
+GRAY_LT = (200, 198, 194)
+GOLD    = (176, 138, 58 )
+WEAVE   = (244, 241, 234)   # líneas de tejido
 
 
 def fnt(name, size):
@@ -34,16 +34,16 @@ def tw(draw, text, font):
     return b[2] - b[0]
 
 
-def draw_t(draw, x, y, text, font, fill):
-    draw.text((x, y), text, font=font, fill=fill)
-
-
-def cx_t(draw, text, font):
-    return (W - tw(draw, text, font)) // 2
+def weave_bg(draw):
+    """Fondo de tejido: finas líneas diagonales cruzadas."""
+    gap = 26
+    for off in range(-H, W, gap):
+        draw.line([(off, 0), (off + H, H)], fill=WEAVE, width=1)
+        draw.line([(off + H, 0), (off, H)], fill=WEAVE, width=1)
 
 
 def paste_label(img, png_name, cx, cy, max_w, max_h):
-    """Composita el PNG transparente centrado en (cx, cy), limitado a max_w × max_h."""
+    """Composita el PNG transparente centrado, limitado a max_w × max_h."""
     try:
         label = Image.open(FOTOS + png_name).convert("RGBA")
     except Exception as e:
@@ -55,75 +55,64 @@ def paste_label(img, png_name, cx, cy, max_w, max_h):
     label = label.resize((nw, nh), Image.LANCZOS)
     x = cx - nw // 2
     y = cy - nh // 2
-    # fondo blanco roto como base antes de pegar
-    bg = Image.new("RGBA", img.size, (252, 250, 246, 255))
-    bg.paste(img.convert("RGBA"), (0, 0))
-    bg.paste(label, (x, y), label)
-    result = bg.convert("RGB")
-    img.paste(result)
+    img.paste(label, (x, y), label)
 
 
 def make_post(filename, tipo, titulo, descripcion, png_label):
-    """
-    tipo        → texto pequeño arriba (ej: "ETIQUETA BORDADA")
-    titulo      → título grande (ej: "TAFETA")
-    descripcion → una línea descriptiva
-    png_label   → archivo PNG transparente de la etiqueta
-    """
     img  = Image.new("RGB", (W, H), BG)
     draw = ImageDraw.Draw(img)
 
-    # ── BORDE PERIMETRAL SUTIL ────────────────────────────────────────────────
-    # Marco fino que da sensación premium
-    margin = 18
-    draw.rectangle(
-        [margin, margin, W - margin, H - margin],
-        outline=GRAY_LT, width=1
-    )
+    # Fondo de tejido
+    weave_bg(draw)
 
-    # ── TIPO — texto pequeño arriba centrado ──────────────────────────────────
-    f_tipo = fnt("Jura-Light.ttf", 13)
-    tipo_y = 58
-    tipo_w = tw(draw, tipo, f_tipo)
-    draw_t(draw, (W - tipo_w) // 2, tipo_y, tipo, f_tipo, GRAY_LT)
+    # Borde perimetral
+    m = 18
+    draw.rectangle([m, m, W - m, H - m], outline=GRAY_LT, width=1)
 
-    # ── TÍTULO — grande, negro, tracking suave ────────────────────────────────
-    f_title = fnt("BricolageGrotesque-Bold.ttf", 96)
+    # TIPO — texto pequeño arriba
+    f_tipo = fnt("Jura-Light.ttf", 15)
+    tipo_y = 60
+    draw.text(((W - tw(draw, tipo, f_tipo)) // 2, tipo_y), tipo, font=f_tipo, fill=GRAY_MD)
+
+    # TÍTULO — grande, BigShoulders
+    f_title = fnt("BigShoulders-Bold.ttf", 124)
     while tw(draw, titulo, f_title) > W - 120:
         sz = f_title.size - 4
-        if sz < 48: break
-        f_title = fnt("BricolageGrotesque-Bold.ttf", sz)
+        if sz < 56: break
+        f_title = fnt("BigShoulders-Bold.ttf", sz)
+    titulo_y = tipo_y + 36
+    draw.text(((W - tw(draw, titulo, f_title)) // 2, titulo_y), titulo, font=f_title, fill=BLACK)
 
-    titulo_y = tipo_y + 44
-    draw_t(draw, cx_t(draw, titulo, f_title), titulo_y, titulo, f_title, BLACK)
+    # Línea dorada
+    line_y = titulo_y + f_title.size + 8
+    ll = 240
+    draw.line([(W // 2 - ll // 2, line_y), (W // 2 + ll // 2, line_y)], fill=GOLD, width=2)
 
-    # ── DESCRIPCIÓN — debajo del título, gris ────────────────────────────────
-    f_desc = fnt("InstrumentSans-Regular.ttf", 20)
-    desc_y = titulo_y + f_title.size + 16
-    draw_t(draw, cx_t(draw, descripcion, f_desc), desc_y, descripcion, f_desc, GRAY_MD)
+    # DESCRIPCIÓN — debajo, gris
+    f_desc = fnt("InstrumentSans-Regular.ttf", 24)
+    desc_y = line_y + 22
+    draw.text(((W - tw(draw, descripcion, f_desc)) // 2, desc_y), descripcion, font=f_desc, fill=GRAY_MD)
 
-    # ── ETIQUETA — protagonista, ocupa la mayor parte del post ───────────────
-    # Zona disponible: desde desc_y + margen hasta arriba del brand mark
-    label_top    = desc_y + 52
-    label_bottom = H - 100
+    # ETIQUETA — protagonista
+    label_top    = desc_y + 56
+    label_bottom = H - 96
     label_cx     = W // 2
     label_cy     = label_top + (label_bottom - label_top) // 2
-    max_label_w  = W - 160         # margen horizontal generoso
+    max_label_w  = W - 200
     max_label_h  = label_bottom - label_top
-
     paste_label(img, png_label, label_cx, label_cy, max_label_w, max_label_h)
     draw = ImageDraw.Draw(img)
 
-    # ── BRAND MARK — abajo centrado ───────────────────────────────────────────
-    f_brand = fnt("BricolageGrotesque-Bold.ttf", 13)
-    brand   = "KORMAN ETIQUETAS"
-    bw      = tw(draw, brand, f_brand)
-    draw_t(draw, (W - bw) // 2, H - 54, brand, f_brand, BLACK)
+    # CTA — información en la bio
+    f_cta = fnt("BigShoulders-Bold.ttf", 34)
+    cta = "INFORMACIÓN EN LA BIO"
+    draw.text(((W - tw(draw, cta, f_cta)) // 2, H - 92), cta, font=f_cta, fill=BLACK)
 
-    # ── LÍNEA DECORATIVA FINA bajo el brand — detalle elegante ───────────────
-    line_y = H - 38
-    line_len = 80
-    draw.line([(W//2 - line_len//2, line_y), (W//2 + line_len//2, line_y)], fill=GRAY_LT, width=1)
+    # Brand mark
+    f_brand = fnt("BricolageGrotesque-Bold.ttf", 14)
+    brand   = "KORMAN ETIQUETAS"
+    draw.text(((W - tw(draw, brand, f_brand)) // 2, H - 54), brand, font=f_brand, fill=BLACK)
+    draw.line([(W // 2 - 40, H - 38), (W // 2 + 40, H - 38)], fill=GOLD, width=1)
 
     img.save(OUT + filename, "PNG", dpi=(300, 300))
     print(f"✓  {filename}")
@@ -151,4 +140,4 @@ make_post(
     png_label   = "givenchy-denim-transparente.png",
 )
 
-print(f"\n✓  Posts v5 listos en posts_v5/")
+print("\n✓  Posts v5 listos en posts_v5/")

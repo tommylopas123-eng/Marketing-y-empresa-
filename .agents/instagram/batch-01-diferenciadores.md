@@ -22,7 +22,7 @@ La mayoría de los fabricantes te dicen que no.
 
 Nosotros no.
 
-En KORMAN hacemos tu primer pedido chico para que arranques sin arriesgar, y cuando tu marca crece, crecemos con vos.
+En KORMAN ETIQUETAS hacemos tu primer pedido chico para que arranques sin arriesgar, y cuando tu marca crece, crecemos con vos.
 
 📩 Pedí tu presupuesto por WhatsApp → link en bio
 
@@ -32,7 +32,7 @@ En KORMAN hacemos tu primer pedido chico para que arranques sin arriesgar, y cua
 ---
 
 ## POST 02 — Local vs China
-**Formato:** Split visual (KORMAN local vs importar)
+**Formato:** Split visual (KORMAN ETIQUETAS local vs importar)
 **Hook:** La cuenta que nadie hace cuando compara precios
 
 **Caption:**
@@ -46,7 +46,7 @@ Hasta que hacés la cuenta real:
 ❌ Muestra: la ves cuando ya llegó todo
 ❌ Si algo está mal: tarde y lejos
 
-Con KORMAN:
+Con KORMAN ETIQUETAS:
 ✅ Pedidos chicos
 ✅ Producción en CABA
 ✅ Revisás la muestra antes de producir
@@ -143,7 +143,7 @@ Si comprás 1.000 etiquetas genéricas que no representan tu marca, que tardaron
 
 ¿Cuánto te costó eso en realidad?
 
-En KORMAN pagás por etiquetas con tu logo, que revisás antes de producir, que llegan cuando las necesitás, y que hacen que tu prenda valga más.
+En KORMAN ETIQUETAS pagás por etiquetas con tu logo, que revisás antes de producir, que llegan cuando las necesitás, y que hacen que tu prenda valga más.
 
 Eso no es un costo. Es una inversión.
 
