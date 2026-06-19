@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300">
+  <!-- Sin fondo (transparente) para superponer sobre fotos -->
+  <text x="500" y="150" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="80" font-weight="900" letter-spacing="-2" fill="#FFFFFF" opacity="0.85">KORMAN</text>
+  <path d="M280 117 q110 -30 220 0 t220 0" fill="none" stroke="#C9A24B"
+        stroke-width="3.5" stroke-dasharray="10 7" stroke-linecap="round" opacity="0.9"/>
+  <text x="500" y="200" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="20" letter-spacing="12" fill="#FFFFFF" opacity="0.85">ETIQUETAS BORDADAS</text>
+</svg>

@@ -3,17 +3,23 @@
 Reglas simples para que TODO (Instagram, presupuestos, etiquetas, WhatsApp) se
 vea de la misma "familia" y transmita profesionalismo.
 
-## 🎨 Logo
+## 🎨 Logo OFICIAL (carpeta `logo-final/`)
 
-- **`logo-perfil.png`** → para la foto de perfil de Instagram/WhatsApp (cuadrado,
-  se ve bien en círculo).
-- **`logo-horizontal.png`** → para membrete, presupuestos, firma de mail, o como
-  marca de agua en las fotos de productos.
-- Los `.svg` son los archivos "madre" (editables sin perder calidad). Si algún
-  día querés cambiar algo, se editan esos y se vuelven a exportar.
+Logo elegido: **fondo negro + nombre en crema + hilo dorado cosido** (estilo
+moderno y premium). El hilo punteado que cruza el nombre imita la costura del
+bordado: el logo mismo cuenta a qué se dedica el negocio. 🧵
 
-> El logo usa un **borde de puntadas** que imita el hilo del bordado: el logo
-> mismo cuenta a qué se dedica el negocio. 🧵
+| Archivo | Cuándo usarlo |
+|---|---|
+| `logo-final/korman-perfil.png` | Foto de perfil de Instagram y WhatsApp (cuadrado) |
+| `logo-final/korman-horizontal.png` | Sobre fondo oscuro: web, redes, placas |
+| `logo-final/korman-horizontal-claro.png` | Sobre fondo blanco: presupuestos, mails, papelería |
+| `logo-final/korman-marca-agua.png` | Marca de agua transparente para las fotos de productos |
+
+> Los `.svg` son los archivos "madre" (editables sin perder calidad). Si algún
+> día querés cambiar algo, se editan esos y se vuelven a exportar a PNG.
+>
+> 📁 En `propuestas/` quedan guardadas las otras ideas que descartamos, por las dudas.
 
 ## 🎨 Paleta de colores (usar siempre estos)
 
