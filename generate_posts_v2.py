@@ -121,30 +121,30 @@ def make_post(
 
 make_post(
     "01-tafeta.png",
-    headline = "Tafeta.",
+    headline = "TAFETA",
     subline  = "Económica. Para etiquetas internas.",
-    label    = "ETIQUETA TEJIDA  ·  01",
+    label    = "ETIQUETA BORDADA  ·  01",
 )
 
 make_post(
     "02-alta-definicion.png",
-    headline = "Alta definición.",
+    headline = "ALTA DEFINICIÓN",
     subline  = "Nítida. Colores intensos. La más elegida.",
-    label    = "ETIQUETA TEJIDA  ·  02",
+    label    = "ETIQUETA BORDADA  ·  02",
 )
 
 make_post(
     "03-triple-densidad.png",
-    headline = "Triple densidad.",
+    headline = "TRIPLE DENSIDAD",
     subline  = "Más relieve. Más presencia. Más marca.",
-    label    = "ETIQUETA TEJIDA  ·  03",
+    label    = "ETIQUETA BORDADA  ·  03",
 )
 
 make_post(
     "04-texturada.png",
-    headline = "Texturada.",
+    headline = "TEXTURADA",
     subline  = "Para marcas que quieren diferenciarse.",
-    label    = "ETIQUETA TEJIDA  ·  04",
+    label    = "ETIQUETA BORDADA  ·  04",
 )
 
 
