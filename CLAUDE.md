@@ -104,6 +104,30 @@ Nunca dejar algo hecho sin documentarlo. El objetivo es que Tommy pueda abrir un
 
 ---
 
+## ERRORES COMETIDOS Y SUS CORRECCIONES — LEER ANTES DE DISEÑAR
+
+### Error 1 — Asignar fotos sin que Tommy lo confirme
+**Qué pasó:** Claude asignó fotos a posts (Triple Densidad → balmain, Texturada → camps, etc.) sin que Tommy dijera cuál va en cuál.
+**Corrección:** NUNCA asignar una foto a un post sin confirmación explícita de Tommy. Si no hay asignación confirmada, dejar el post sin foto o preguntar.
+
+### Error 2 — Fondo negro en los posts de Instagram
+**Qué pasó:** Los posts con fondo negro (#080808) hacen que las etiquetas no se vean bien, especialmente las oscuras.
+**Corrección:** El fondo negro es SOLO para el logo. Los posts de Instagram deben tener otro fondo (blanco roto, gris claro, o lo que defina Tommy) que permita que las etiquetas contrasten y se vean bien.
+
+### Error 3 — Label "ETIQUETA BORDADA · 01" en el post
+**Qué pasó:** Se puso un texto de numeración encima del post ("ETIQUETA BORDADA · 01") que se veía feo y confuso.
+**Corrección:** Nunca poner numeración de serie en los posts. El texto del post debe tener título, información relevante del producto, y nada más.
+
+### Error 4 — Línea separadora horizontal en el medio del post
+**Qué pasó:** Una línea fina separaba la zona de texto de la zona de foto, cortando visualmente el post.
+**Corrección:** No usar líneas separadoras horizontales. El diseño debe fluir como un conjunto.
+
+### Error 5 — Tomar decisiones de diseño sin base confirmada
+**Qué pasó:** Claude mantuvo la filosofía "Silencio Textil" con fondo negro sin revaluar cuando el resultado no era profesional.
+**Corrección:** Si Tommy dice que algo no le gusta, rethink completo. No defender elecciones anteriores. Buscar referencia de la competencia antes de rediseñar.
+
+---
+
 ## PRÓXIMOS PASOS (al arrancar el próximo chat)
 
 1. Tommy confirma qué etiqueta va en cada post → incorporar foto real
