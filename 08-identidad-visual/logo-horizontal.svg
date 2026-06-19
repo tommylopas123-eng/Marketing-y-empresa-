@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360">
+  <rect width="1000" height="360" fill="#FDF6E3"/>
+  <!-- Etiqueta/label con borde de puntadas -->
+  <rect x="40" y="70" width="220" height="220" rx="28" fill="#0E4D4B"/>
+  <rect x="62" y="92" width="176" height="176" rx="16" fill="none"
+        stroke="#E7C873" stroke-width="4" stroke-dasharray="10 9" stroke-linecap="round"/>
+  <!-- Aguja e hilo dentro de la etiqueta -->
+  <g stroke="#E7C873" stroke-width="4" fill="none" stroke-linecap="round">
+    <line x1="100" y1="135" x2="200" y2="135"/>
+    <path d="M100 135 q-20 12 0 24 q20 12 0 24"/>
+  </g>
+  <circle cx="200" cy="135" r="5" fill="#E7C873"/>
+  <text x="150" y="225" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-size="64"
+        font-weight="bold" fill="#FDF6E3">K</text>
+  <!-- Texto de marca -->
+  <text x="300" y="195" font-family="Georgia, 'Times New Roman', serif"
+        font-size="104" font-weight="bold" letter-spacing="3" fill="#0E4D4B">KORMAN</text>
+  <text x="305" y="248" font-family="Arial, Helvetica, sans-serif"
+        font-size="34" letter-spacing="13" fill="#C99A2E">ETIQUETAS BORDADAS</text>
+</svg>

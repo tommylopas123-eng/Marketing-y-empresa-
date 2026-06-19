@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <!-- Fondo circular (queda bien en la foto de perfil redonda de Instagram) -->
+  <circle cx="250" cy="250" r="250" fill="#0E4D4B"/>
+  <!-- Borde de "puntadas" (imita el hilo del bordado) -->
+  <circle cx="250" cy="250" r="212" fill="none" stroke="#E7C873"
+          stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round"/>
+  <!-- Aguja e hilo -->
+  <g stroke="#E7C873" stroke-width="6" fill="none" stroke-linecap="round">
+    <line x1="170" y1="150" x2="330" y2="150"/>
+    <path d="M170 150 q-30 18 0 36 q30 18 0 36" />
+  </g>
+  <circle cx="330" cy="150" r="7" fill="#E7C873"/>
+  <!-- Nombre de la marca -->
+  <text x="250" y="292" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-size="74"
+        font-weight="bold" letter-spacing="2" fill="#FDF6E3">KORMAN</text>
+  <!-- Bajada -->
+  <text x="250" y="345" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="27"
+        letter-spacing="9" fill="#E7C873">ETIQUETAS</text>
+  <text x="250" y="378" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="27"
+        letter-spacing="9" fill="#E7C873">BORDADAS</text>
+</svg>
