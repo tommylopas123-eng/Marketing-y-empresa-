@@ -58,7 +58,7 @@ def post_oscuro(filename, bg, l1, l2, sub):
 
 # 3 posts oscuros de acento
 post_oscuro("o1-cada-punto.png", BLACK, "CADA PUNTO,", "TU MARCA", "bordado real, no estampa")
-post_oscuro("o2-46-anios.png",   BORDO, "46 AÑOS", "DE OFICIO", "empresa familiar argentina")
+post_oscuro("o2-46-anios.png",   BLACK, "46 AÑOS", "DE OFICIO", "empresa familiar argentina")
 post_oscuro("o3-argentina.png",  BLACK, "HECHO EN", "ARGENTINA", "maquinaria suiza · alta definición")
 
 # ── COMPONER GRILLA 3x3 ─────────────────────────────────────────────
