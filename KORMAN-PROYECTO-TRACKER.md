@@ -19,7 +19,7 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 - [x] **Perfiles YAML de competidores** — Printmax, BestLabels, China. Fuente de verdad centralizada.
 
 ### Identidad visual
-- [x] **Logo/emblema KORMAN ETIQUETAS aprobado (foto de perfil)** — emblema hexagonal estilo "casa": hexágono negro, techo dorado, **K** grande blanca, **aguja plateada** atravesando en diagonal con ojo e hilo. Archivo oficial: `assets/korman-logo-oficial.jpg` (= `assets/korman-instagram-profile.jpg`). Versión elegida: hilo plata. *Tentativo — se puede revisar el color del hilo más adelante.*
+- [x] **Logo/emblema KORMAN ETIQUETAS aprobado (foto de perfil)** — **sello circular elegante**: círculo negro fino, texto "KORMAN ETIQUETAS BORDADAS" en serif rellena (CrimsonPro Bold) sobre el arco superior, "EST. 1980" en bordó abajo, **K** central en serif Gloock centrada, **aguja plateada con hilo bordó** cruzando la K. Fondo blanco roto. Archivo oficial: `assets/korman-logo-oficial.jpg` (= `assets/korman-instagram-profile.jpg` = `.agents/design/logo/korman-emblema-oficial.jpg`). Generado por `generate_logo_circular_medio.py` (función `limpio`). *Aprobado por Tommy 20/06/2026.*
 - [x] **Logo KORMAN ETIQUETAS wordmark** — wordmark puro, BricolageGrotesque Bold, negro/blanco, sin ícono (uso secundario)
 - [x] **5 versiones del logo** — horizontal blanco, horizontal negro, avatar IG, watermarks transparentes
 - [x] **Filosofía visual "Hilo Nocturno"** — oscuro, dorado, patrones de tejido, editorial
