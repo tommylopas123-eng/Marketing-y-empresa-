@@ -63,15 +63,21 @@ def limpio():
     cx=cy=S//2
     d.ellipse([cx-440,cy-440,cx+440,cy+440], outline=BLACK, width=3)
     d.ellipse([cx-418,cy-418,cx+418,cy+418], outline=BORDO, width=1)
-    texto_arco(img,cx,cy,388,"KORMAN ETIQUETAS BORDADAS",fnt("Italiana-Regular.ttf",52),BLACK,-90,200)
-    texto_arco(img,cx,cy,388,"EST. 1980",fnt("Italiana-Regular.ttf",44),BORDO,90,46,flip=True)
+    # letras rellenas (serif bold) para que se lean bien en Instagram
+    texto_arco(img,cx,cy,386,"KORMAN ETIQUETAS BORDADAS",fnt("CrimsonPro-Bold.ttf",54),BLACK,-90,205)
+    texto_arco(img,cx,cy,386,"EST. 1980",fnt("CrimsonPro-Bold.ttf",46),BORDO,90,48,flip=True)
     d = ImageDraw.Draw(img)
-    estrella4(d,cx-330,cy,11,BORDO); estrella4(d,cx+330,cy,11,BORDO)
     f_k = fnt("Gloock-Regular.ttf",400)
     while tw(d,"K",f_k)>340: f_k=fnt("Gloock-Regular.ttf",f_k.size-6)
     kw,kh=tw(d,"K",f_k),th(d,"K",f_k)
     d.text((cx-kw//2,cy-kh//2-50),"K",font=f_k,fill=BLACK)
-    aguja(d,cx,cy+100,math.radians(-22),300,hw=5)
+    # aguja con hilo
+    ax1,ay1=aguja(d,cx,cy+100,math.radians(-22),300,hw=5)
+    px,py=ax1,ay1
+    for t in range(0,150,4):
+        a=math.radians(-22)
+        xx=ax1-t*math.cos(a-0.45); yy=ay1-t*math.sin(a-0.45)+int(15*math.sin(t/15))
+        d.line([(px,py),(xx,yy)],fill=BORDO,width=2); px,py=xx,yy
     img.save(OUT+"1-limpio.png","PNG",dpi=(300,300)); print("✓ 1-limpio.png")
 
 # ── 2 · UN ANILLO GUILLOCHÉ SUAVE ───────────────────────────────────
