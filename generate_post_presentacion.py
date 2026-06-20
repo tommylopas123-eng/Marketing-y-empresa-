@@ -69,9 +69,9 @@ d.line([(W//2-ll//2,ly),(W//2+ll//2,ly)],fill=GOLD,width=2)
 # Texto cuerpo
 f_b=fnt("InstrumentSans-Regular.ttf",34)
 lines=[
-    "Empresa familiar argentina",
-    "especializada en etiquetas bordadas",
-    "para marcas de indumentaria.",
+    "Tu marca, con etiquetas bordadas",
+    "de calidad profesional.",
+    "46 años de oficio para marcas.",
 ]
 y=670
 for line in lines:
