@@ -102,6 +102,12 @@ Nunca dejar algo hecho sin documentarlo. El objetivo es que Tommy pueda abrir un
 - Pasos de Instagram API documentados en tracker
 - **Regla nueva:** todo lo que se haga se documenta en los docs y se regeneran los PDFs
 
+### Sesión 3 — 20/06/2026
+- **Logo oficial aprobado** — sello circular elegante: círculo negro fino, "KORMAN ETIQUETAS BORDADAS" en CrimsonPro-Bold (relleno) sobre arco superior, "EST. 1980" en bordó abajo, **K** central Gloock centrada con bounding box exacto, aguja plateada con hilo bordó. Archivos: `assets/korman-logo-oficial.jpg`, `assets/korman-instagram-profile.jpg`, `.agents/design/logo/korman-emblema-oficial.jpg`. Generador: `generate_logo_circular_medio.py` (función `limpio`). **YA está como foto de perfil de Instagram.**
+- **Posts v5 aprobados** (estilo preferido): fondo blanco roto con trama textil, título BigShoulders-Bold, línea dorada, "INFORMACIÓN EN LA BIO". En `posts_v5/`: `00-presentacion.png` (46 AÑOS / CON ETIQUETAS / BORDADAS), `01-tafeta.png`, `02-alta-definicion.png`. Estilo editorial fue RECHAZADO.
+- **Estrategia de grilla** — por filas (no ajedrez): fila 1 = 3 posts NEGROS (46 años / frase / hecho en argentina), fila 2 = 3 productos BLANCOS, fila 3 = negros otra vez. Mockup en `assets/mockup-grilla.png` (`generate_grid_mockup.py`). **Tommy todavía no aprobó la grilla final.**
+- **4 estilos de negro generados** para que Tommy elija → ver sección RECORDATORIO DEL NEGRO arriba.
+
 ---
 
 ## ERRORES COMETIDOS Y SUS CORRECCIONES — LEER ANTES DE DISEÑAR
@@ -128,10 +134,29 @@ Nunca dejar algo hecho sin documentarlo. El objetivo es que Tommy pueda abrir un
 
 ---
 
+## PENDIENTE IMPORTANTE — RECORDATORIO DEL NEGRO ⚠️
+
+**Tommy todavía NO eligió el estilo de negro para los posts oscuros.**
+Hay 4 opciones generadas y guardadas en `posts_negro_estilos/`:
+- **A · MATE** — negro liso sin textura, minimalista
+- **B · METALIZADO** — degradé grafito con shimmer diagonal
+- **C · TEXTURADO TELA** — trama densa tipo tejido (más textil)
+- **D · RELIEVE** — vignette desde el centro, efecto estampado
+
+Panel comparativo: `posts_negro_estilos/PANEL-estilos-negro.png`
+Generador: `generate_negro_styles.py`
+
+👉 **CUANDO TOMMY VAYA A SUBIR ALGO EN NEGRO, RECORDARLE que primero tiene que
+elegir A, B, C o D.** Recién con el estilo elegido se arman los 3 posts oscuros
+definitivos (46 años / frase / hecho en argentina) y el mockup final de la grilla.
+
+---
+
 ## PRÓXIMOS PASOS (al arrancar el próximo chat)
 
-1. Tommy confirma qué etiqueta va en cada post → incorporar foto real
-2. Fotos del taller y máquinas suizas → Tommy las pasa
-3. Configurar Instagram API (pasos en el tracker)
-4. 6 posts adicionales del batch 2
-5. Testimonios de clientes cuando estén disponibles
+1. **Tommy elige estilo de negro (A/B/C/D)** → aplicar a los 3 posts oscuros + mockup final
+2. Tommy confirma qué etiqueta va en cada post → incorporar foto real
+3. Fotos del taller y máquinas suizas → Tommy las pasa
+4. Configurar Instagram API (pasos en el tracker)
+5. 6 posts adicionales del batch 2
+6. Testimonios de clientes cuando estén disponibles

@@ -141,7 +141,24 @@ identidad visual, contenido estratégico e infraestructura de comunicación.
 
 ---
 
+## ⚠️ DECISIÓN PENDIENTE — ESTILO DE NEGRO
+
+Tommy debe elegir el estilo de negro para los 3 posts oscuros de la grilla.
+4 opciones en `posts_negro_estilos/` (panel: `PANEL-estilos-negro.png`):
+- **A · MATE** · **B · METALIZADO** · **C · TEXTURADO TELA** · **D · RELIEVE**
+
+**Recordarle a Tommy elegir A/B/C/D antes de subir cualquier post en negro.**
+Con el estilo elegido → armar los 3 posts oscuros definitivos + mockup final.
+
+---
+
 ## LOG DE SESIONES
+
+### Sesión 3 — 20/06/2026
+- **Logo oficial aprobado** (sello circular: K Gloock, aguja plateada con hilo bordó, "EST. 1980"). Ya es la foto de perfil de IG. Generador `generate_logo_circular_medio.py`.
+- **Posts v5 aprobados** (estilo blanco roto con trama textil): presentación "46 AÑOS", tafeta, alta definición. En `posts_v5/`.
+- **Estrategia de grilla por filas** (no ajedrez): fila negra, fila blanca, fila negra. Mockup en `assets/mockup-grilla.png`.
+- **4 estilos de negro generados** para elección de Tommy (mate / metalizado / texturado / relieve). PENDIENTE de decisión.
 
 ### Sesión 1 — 19/06/2026
 - Creado contexto de empresa y análisis de competencia con Firecrawl
