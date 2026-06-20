@@ -62,7 +62,6 @@ def limpio():
     img = Image.new("RGB",(S,S),BG); d = ImageDraw.Draw(img)
     cx=cy=S//2
     d.ellipse([cx-440,cy-440,cx+440,cy+440], outline=BLACK, width=3)
-    d.ellipse([cx-418,cy-418,cx+418,cy+418], outline=BORDO, width=1)
     # letras rellenas (serif bold) para que se lean bien en Instagram
     texto_arco(img,cx,cy,386,"KORMAN ETIQUETAS BORDADAS",fnt("CrimsonPro-Bold.ttf",54),BLACK,-90,205)
     texto_arco(img,cx,cy,386,"EST. 1980",fnt("CrimsonPro-Bold.ttf",46),BORDO,90,48,flip=True)
