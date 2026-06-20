@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""KORMAN — mockup de grilla 3x3 mezclando posts claros y oscuros (ritmo de feed).
-Genera 3 posts oscuros de acento y compone la grilla de perfil."""
+"""KORMAN — mockup de grilla por filas: fila 1 NEGRA, fila 2 productos BLANCOS.
+Genera los posts negros de la fila 1 y compone la grilla."""
 from PIL import Image, ImageDraw, ImageFont
 import os
 FONTS = "/home/user/Marketing-y-empresa-/.claude/skills/canvas-design/canvas-fonts/"
@@ -10,12 +10,10 @@ OUT   = "/home/user/Marketing-y-empresa-/assets/"
 os.makedirs(DARK, exist_ok=True)
 
 W = H = 1080
-BG_W   = (252, 250, 246)
 BLACK  = (12, 11, 11)
-BORDO  = (108, 30, 42)
 CREAM  = (250, 248, 244)
 GOLD   = (176, 138, 58)
-GRAYW  = (180, 178, 174)
+GRAYW  = (170, 168, 164)
 
 def fnt(n, s):
     try:    return ImageFont.truetype(FONTS + n, s)
@@ -29,22 +27,26 @@ def weave_bg(d, color):
         d.line([(off,0),(off+H,H)], fill=color, width=1)
         d.line([(off+H,0),(off,H)], fill=color, width=1)
 
-def post_oscuro(filename, bg, l1, l2, sub):
+def post_negro(filename, bg, lineas, gold_idx, sub, size=150):
+    """lineas: lista de strings. gold_idx: índice de la línea dorada (o -1)."""
     img = Image.new("RGB", (W, H), bg)
     d   = ImageDraw.Draw(img)
-    # trama sutil un poco más clara que el fondo
-    weave_bg(d, tuple(min(c+10,255) for c in bg))
-    # borde fino
-    d.rectangle([18,18,W-18,H-18], outline=tuple(min(c+40,255) for c in bg), width=1)
-    # título grande centrado vertical
-    f1 = fnt("BigShoulders-Bold.ttf", 150)
-    while tw(d,l1,f1) > W-140: f1 = fnt("BigShoulders-Bold.ttf", f1.size-4)
-    f2 = fnt("BigShoulders-Bold.ttf", 150)
-    while tw(d,l2,f2) > W-140: f2 = fnt("BigShoulders-Bold.ttf", f2.size-4)
-    d.text(((W-tw(d,l1,f1))//2, 360), l1, font=f1, fill=CREAM)
-    d.text(((W-tw(d,l2,f2))//2, 360+f1.size+6), l2, font=f2, fill=GOLD)
+    weave_bg(d, tuple(min(c+9,255) for c in bg))
+    d.rectangle([18,18,W-18,H-18], outline=tuple(min(c+38,255) for c in bg), width=1)
+
+    fonts = []
+    for ln in lineas:
+        f = fnt("BigShoulders-Bold.ttf", size)
+        while tw(d, ln, f) > W-140: f = fnt("BigShoulders-Bold.ttf", f.size-4)
+        fonts.append(f)
+    total_h = sum(f.size for f in fonts) + 6*(len(lineas)-1)
+    y = (H - total_h)//2 - 40
+    for i, ln in enumerate(lineas):
+        col = GOLD if i == gold_idx else CREAM
+        d.text(((W-tw(d,ln,fonts[i]))//2, y), ln, font=fonts[i], fill=col)
+        y += fonts[i].size + 6
     # línea dorada
-    ly = 360+f1.size+6+f2.size+30
+    ly = y + 18
     d.line([(W//2-120, ly),(W//2+120, ly)], fill=GOLD, width=2)
     # subtítulo
     f_s = fnt("InstrumentSans-Regular.ttf", 30)
@@ -56,22 +58,27 @@ def post_oscuro(filename, bg, l1, l2, sub):
     img.save(DARK + filename, "PNG", dpi=(300,300))
     print("✓", filename)
 
-# 3 posts oscuros de acento
-post_oscuro("o1-cada-punto.png", BLACK, "CADA PUNTO,", "TU MARCA", "bordado real, no estampa")
-post_oscuro("o2-46-anios.png",   BLACK, "46 AÑOS", "DE OFICIO", "empresa familiar argentina")
-post_oscuro("o3-argentina.png",  BLACK, "HECHO EN", "ARGENTINA", "maquinaria suiza · alta definición")
+# Fila 1 — los 3 negros
+post_negro("n1-46-anios.png", BLACK,
+           ["46 AÑOS", "CON ETIQUETAS", "BORDADAS"], 2,
+           "empresa familiar argentina", size=132)
+post_negro("n2-cada-punto.png", BLACK,
+           ["CADA PUNTO,", "TU MARCA"], 1,
+           "bordado real, no estampa", size=150)
+post_negro("n3-argentina.png", BLACK,
+           ["HECHO EN", "ARGENTINA"], 1,
+           "maquinaria suiza · alta definición", size=150)
 
 # ── COMPONER GRILLA 3x3 ─────────────────────────────────────────────
-cell = 360
+cell = 360; gap = 6
 grid_imgs = [
-    # Fila 1 — claros (producto)
-    POSTS+"00-presentacion.png", POSTS+"01-tafeta.png", POSTS+"02-alta-definicion.png",
-    # Fila 2 — oscuros (frase / dato)
-    DARK+"o1-cada-punto.png",    DARK+"o2-46-anios.png", DARK+"o3-argentina.png",
-    # Fila 3 — claros (producto)
-    POSTS+"01-tafeta.png",       POSTS+"02-alta-definicion.png", POSTS+"00-presentacion.png",
+    # Fila 1 — NEGROS
+    DARK+"n1-46-anios.png", DARK+"n2-cada-punto.png", DARK+"n3-argentina.png",
+    # Fila 2 — productos BLANCOS
+    POSTS+"01-tafeta.png", POSTS+"02-alta-definicion.png", POSTS+"01-tafeta.png",
+    # Fila 3 — negros otra vez (continúa el patrón)
+    DARK+"n1-46-anios.png", DARK+"n2-cada-punto.png", DARK+"n3-argentina.png",
 ]
-gap = 6
 GW = cell*3 + gap*2
 canvas = Image.new("RGB", (GW, GW), (255,255,255))
 for i, p in enumerate(grid_imgs):
