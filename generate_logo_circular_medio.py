@@ -71,10 +71,10 @@ def limpio():
     # centrado exacto usando el bounding box real (compensa el margen lateral de la fuente)
     kb = d.textbbox((0,0),"K",font=f_k)
     kx = cx - (kb[0]+kb[2])//2
-    ky = cy - (kb[1]+kb[3])//2 - 50
+    ky = cy - (kb[1]+kb[3])//2 - 8
     d.text((kx,ky),"K",font=f_k,fill=BLACK)
     # aguja con hilo
-    ax1,ay1=aguja(d,cx,cy+100,math.radians(-22),300,hw=5)
+    ax1,ay1=aguja(d,cx,cy+140,math.radians(-22),300,hw=5)
     px,py=ax1,ay1
     for t in range(0,150,4):
         a=math.radians(-22)
