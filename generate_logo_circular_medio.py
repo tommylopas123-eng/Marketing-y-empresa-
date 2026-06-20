@@ -68,8 +68,11 @@ def limpio():
     d = ImageDraw.Draw(img)
     f_k = fnt("Gloock-Regular.ttf",400)
     while tw(d,"K",f_k)>340: f_k=fnt("Gloock-Regular.ttf",f_k.size-6)
-    kw,kh=tw(d,"K",f_k),th(d,"K",f_k)
-    d.text((cx-kw//2,cy-kh//2-50),"K",font=f_k,fill=BLACK)
+    # centrado exacto usando el bounding box real (compensa el margen lateral de la fuente)
+    kb = d.textbbox((0,0),"K",font=f_k)
+    kx = cx - (kb[0]+kb[2])//2
+    ky = cy - (kb[1]+kb[3])//2 - 50
+    d.text((kx,ky),"K",font=f_k,fill=BLACK)
     # aguja con hilo
     ax1,ay1=aguja(d,cx,cy+100,math.radians(-22),300,hw=5)
     px,py=ax1,ay1
