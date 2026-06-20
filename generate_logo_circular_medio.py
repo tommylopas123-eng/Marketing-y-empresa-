@@ -73,13 +73,6 @@ def limpio():
     kx = cx - (kb[0]+kb[2])//2
     ky = cy - (kb[1]+kb[3])//2 - 8
     d.text((kx,ky),"K",font=f_k,fill=BLACK)
-    # aguja con hilo
-    ax1,ay1=aguja(d,cx,cy+140,math.radians(-22),300,hw=5)
-    px,py=ax1,ay1
-    for t in range(0,150,4):
-        a=math.radians(-22)
-        xx=ax1-t*math.cos(a-0.45); yy=ay1-t*math.sin(a-0.45)+int(15*math.sin(t/15))
-        d.line([(px,py),(xx,yy)],fill=BORDO,width=2); px,py=xx,yy
     img.save(OUT+"1-limpio.png","PNG",dpi=(300,300)); print("✓ 1-limpio.png")
 
 # ── 2 · UN ANILLO GUILLOCHÉ SUAVE ───────────────────────────────────
