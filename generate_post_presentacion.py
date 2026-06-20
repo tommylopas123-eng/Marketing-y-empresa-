@@ -46,34 +46,33 @@ f_tipo=fnt("Jura-Light.ttf",15)
 tipo="ETIQUETAS BORDADAS  ·  BUENOS AIRES"
 d.text(((W-tw(d,tipo,f_tipo))//2,120),tipo,font=f_tipo,fill=GRAY_MD)
 
-# Título grande en dos líneas
-f_t=fnt("BigShoulders-Bold.ttf",132)
-t1="46 AÑOS"
+# Título grande — el mensaje principal
+f_t=fnt("BigShoulders-Bold.ttf",118)
+t1="TU MARCA,"
 while tw(d,t1,f_t)>W-120: f_t=fnt("BigShoulders-Bold.ttf",f_t.size-4)
-d.text(((W-tw(d,t1,f_t))//2,200),t1,font=f_t,fill=BLACK)
+d.text(((W-tw(d,t1,f_t))//2,210),t1,font=f_t,fill=BLACK)
 
-f_t2=fnt("BigShoulders-Bold.ttf",132)
-t2="BORDANDO"
+f_t2=fnt("BigShoulders-Bold.ttf",118)
+t2="CON ETIQUETAS"
 while tw(d,t2,f_t2)>W-120: f_t2=fnt("BigShoulders-Bold.ttf",f_t2.size-4)
 d.text(((W-tw(d,t2,f_t2))//2,330),t2,font=f_t2,fill=BLACK)
 
-f_t3=fnt("BigShoulders-Bold.ttf",132)
-t3="TU MARCA"
+f_t3=fnt("BigShoulders-Bold.ttf",118)
+t3="BORDADAS"
 while tw(d,t3,f_t3)>W-120: f_t3=fnt("BigShoulders-Bold.ttf",f_t3.size-4)
-d.text(((W-tw(d,t3,f_t3))//2,460),t3,font=f_t3,fill=GOLD)
+d.text(((W-tw(d,t3,f_t3))//2,450),t3,font=f_t3,fill=GOLD)
 
 # Línea dorada
-ly=620; ll=240
+ly=600; ll=240
 d.line([(W//2-ll//2,ly),(W//2+ll//2,ly)],fill=GOLD,width=2)
 
 # Texto cuerpo
 f_b=fnt("InstrumentSans-Regular.ttf",34)
 lines=[
-    "Tu marca, con etiquetas bordadas",
-    "de calidad profesional.",
+    "Con calidad profesional.",
     "46 años de oficio para marcas.",
 ]
-y=670
+y=650
 for line in lines:
     d.text(((W-tw(d,line,f_b))//2,y),line,font=f_b,fill=GRAY_MD)
     y+=54
