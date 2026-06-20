@@ -48,7 +48,7 @@ d.text(((W-tw(d,tipo,f_tipo))//2,120),tipo,font=f_tipo,fill=GRAY_MD)
 
 # Título grande — el mensaje principal
 f_t=fnt("BigShoulders-Bold.ttf",118)
-t1="TU MARCA,"
+t1="46 AÑOS"
 while tw(d,t1,f_t)>W-120: f_t=fnt("BigShoulders-Bold.ttf",f_t.size-4)
 d.text(((W-tw(d,t1,f_t))//2,210),t1,font=f_t,fill=BLACK)
 
@@ -67,12 +67,13 @@ ly=600; ll=240
 d.line([(W//2-ll//2,ly),(W//2+ll//2,ly)],fill=GOLD,width=2)
 
 # Texto cuerpo
-f_b=fnt("InstrumentSans-Regular.ttf",34)
+f_b=fnt("InstrumentSans-Regular.ttf",30)
 lines=[
-    "Con calidad profesional.",
-    "46 años de oficio para marcas.",
+    "Empresa familiar argentina",
+    "especializada en etiquetas bordadas",
+    "para marcas.",
 ]
-y=650
+y=648
 for line in lines:
     d.text(((W-tw(d,line,f_b))//2,y),line,font=f_b,fill=GRAY_MD)
     y+=54
