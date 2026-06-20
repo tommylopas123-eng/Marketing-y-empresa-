@@ -64,9 +64,12 @@ post_oscuro("o3-argentina.png",  BLACK, "HECHO EN", "ARGENTINA", "maquinaria sui
 # ── COMPONER GRILLA 3x3 ─────────────────────────────────────────────
 cell = 360
 grid_imgs = [
-    POSTS+"00-presentacion.png", DARK+"o1-cada-punto.png", POSTS+"01-tafeta.png",
-    DARK+"o2-46-anios.png",      POSTS+"02-alta-definicion.png", DARK+"o3-argentina.png",
-    POSTS+"01-tafeta.png",       DARK+"o1-cada-punto.png", POSTS+"00-presentacion.png",
+    # Fila 1 — claros (producto)
+    POSTS+"00-presentacion.png", POSTS+"01-tafeta.png", POSTS+"02-alta-definicion.png",
+    # Fila 2 — oscuros (frase / dato)
+    DARK+"o1-cada-punto.png",    DARK+"o2-46-anios.png", DARK+"o3-argentina.png",
+    # Fila 3 — claros (producto)
+    POSTS+"01-tafeta.png",       POSTS+"02-alta-definicion.png", POSTS+"00-presentacion.png",
 ]
 gap = 6
 GW = cell*3 + gap*2
