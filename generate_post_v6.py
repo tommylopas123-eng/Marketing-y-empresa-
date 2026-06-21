@@ -14,7 +14,7 @@ BG    = (175, 150, 112)   # lino café — fondo oficial
 DARK  = (60,  38,  18)    # marrón oscuro — texto principal
 BORDO = (124, 38,  50)    # bordó — acento
 CAMEL = (210, 178, 118)   # camel — línea dorada y detalles
-GRAY  = (140, 115, 85)    # gris cálido — subtítulos
+GRAY  = (80,  58,  32)    # marrón visible — subtítulos
 WEAVE = (163, 139, 102)   # trama textil
 
 def fnt(n, s):
@@ -56,15 +56,22 @@ for txt, col in titulos:
 ly = y + 20
 d.line([(W//2-120, ly),(W//2+120, ly)], fill=CAMEL, width=2)
 
-# subtítulo
-f_s = fnt("InstrumentSans-Regular.ttf", 30)
-sub = "empresa familiar argentina"
-d.text(((W - tw(d,sub,f_s))//2, ly+28), sub, font=f_s, fill=GRAY)
+# subtítulo — texto completo en 3 líneas
+f_s = fnt("InstrumentSans-Regular.ttf", 28)
+subs = [
+    "Empresa familiar argentina",
+    "especializada en etiquetas bordadas",
+    "para marcas.",
+]
+sy = ly + 28
+for line in subs:
+    d.text(((W - tw(d,line,f_s))//2, sy), line, font=f_s, fill=GRAY)
+    sy += 44
 
 # CTA
 f_cta = fnt("BigShoulders-Bold.ttf", 44)
 cta = "INFORMACIÓN EN LA BIO"
-d.text(((W - tw(d,cta,f_cta))//2, ly+90), cta, font=f_cta, fill=DARK)
+d.text(((W - tw(d,cta,f_cta))//2, sy + 20), cta, font=f_cta, fill=DARK)
 
 # brand
 f_b = fnt("CrimsonPro-Bold.ttf", 22)
