@@ -1,0 +1,61 @@
+name: Importación directa desde China
+url: aliexpress.com / proveedores directos
+type: importación
+location: China
+
+positioning: >
+  Etiquetas genéricas o semipersonalizadas a muy bajo costo unitario.
+  Se consiguen vía AliExpress, Alibaba o intermediarios.
+  El atractivo es el precio; la barrera es el volumen y el tiempo.
+
+target_audience:
+  - Marcas grandes con pedidos de miles de unidades
+  - Quien prioriza precio sobre todo lo demás
+
+products:
+  - Etiquetas tejidas/bordadas estándar
+  - Marquillas genéricas
+  - Etiquetas impresas en grandes volúmenes
+
+pricing:
+  visible: variable (depende del proveedor)
+  model: muy bajo por unidad en grandes volúmenes
+  minimums: usualmente 500-1000+ unidades, a veces miles
+
+channels:
+  - AliExpress / Alibaba
+  - Intermediarios en Argentina
+  - Sin atención local
+
+strengths:
+  - Precio unitario muy bajo en volúmenes altos
+  - Gran capacidad de producción
+
+weaknesses:
+  - Mínimos enormes (inaccesibles para marcas chicas)
+  - Demoras: 30 a 90 días según temporada
+  - Sin revisión de muestra local previa
+  - Sin control de calidad en Argentina
+  - Sin trato personalizado ni asesoramiento
+  - Riesgo de que llegue diferente a lo pedido
+  - Trámites de importación complicados
+
+common_complaints:
+  - "Llegó diferente al diseño"
+  - "Tardó 2 meses y ya había lanzado la colección"
+  - "Tuve que pedir 1000 y me sobraron 800"
+  - "No había quién me ayudara si algo salía mal"
+
+best_for:
+  - Marcas establecidas con pedidos masivos y tiempo de anticipación
+  - Quien puede esperar 2+ meses sin problema
+
+not_ideal_for:
+  - Marcas que están arrancando
+  - Quien no tiene capital para inmovilizar en stock grande
+  - Lanzamientos con fecha fija
+
+korman_advantage_vs: >
+  KORMAN produce local, en plazos cortos, con pedidos chicos,
+  y podés revisar la muestra antes de producir todo.
+  No apostás 1000 etiquetas a que "quede bien cuando llegue de China".

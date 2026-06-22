@@ -1,14 +1,43 @@
 # Product Marketing Context — KORMAN Etiquetas Bordadas
 
-*Última actualización: 19/06/2026*
-*Nota: las marcas [confirmar] son datos a validar con el dueño (papá).*
+*Última actualización: 19/06/2026 — datos confirmados con el dueño.*
 
 ## Product Overview
-**One-liner:** Etiquetas bordadas y marquillas personalizadas para marcas de ropa y proyectos personales.
-**Qué hace:** KORMAN fabrica etiquetas bordadas, marquillas tejidas y etiquetas personalizadas con el logo o nombre del cliente, para coser en prendas. Trabaja tanto con marcas de indumentaria (marca privada) como con particulares (nombres, regalos, marcar ropa).
-**Categoría:** Insumos textiles / etiquetas y marquillas para indumentaria.
-**Tipo de producto:** Fabricación a pedido (manufactura artesanal/industrial textil).
-**Modelo de negocio:** Venta por pedido. Cantidades chicas y grandes. Precio por unidad según volumen y diseño. [confirmar precios y mínimos]
+**One-liner:** Etiquetas tejidas personalizadas para marcas de ropa y proyectos personales. 46 años de trayectoria, maquinaria suiza, producción en CABA.
+**Qué hace:** KORMAN ETIQUETAS fabrica etiquetas tejidas (también llamadas bordadas — son lo mismo: se parten del hilado y se tejen) personalizadas con el logo o nombre del cliente. Trabaja tanto con marcas de indumentaria (marca privada) como con particulares.
+**Aclaración técnica importante:** "Bordadas" y "tejidas" son el mismo producto en la industria. Todo parte del hilado y se teje. La diferencia está en la calidad/densidad del tejido.
+**Categoría:** Insumos textiles / etiquetas tejidas para indumentaria.
+**Tipo de producto:** Fabricación a pedido. Maquinaria suiza de alta tecnología. 46 años de empresa.
+**Modelo de negocio:** Precio variable según tipo de tejido, diseño, tamaño, calidad y terminación. Sin mínimo fijo único — depende del pedido.
+
+## Productos y Calidades (confirmado)
+
+### Tipos de tejido (de menor a mayor calidad):
+| Tipo | Descripción | Uso ideal |
+|------|-------------|-----------|
+| **Tafeta** | Más económica. Baja resolución, colores menos intensos. | Etiquetas internas, instrucciones de lavado, talles. |
+| **Alta definición** | La más usual. Buena nitidez, doble de pasadas que tafeta, colores intensos. | Marquillas de marca, logos, nombres. |
+| **Triple densidad** | Mayor volumen y presencia. | Logos con mucho detalle, efecto premium. |
+| **Texturada** | Acabado con relieve y textura especial. | Piezas diferenciales, marcas premium. |
+
+### Terminaciones disponibles:
+- Cortadas y soldadas en las puntas
+- Cortadas y dobladas al medio
+- Planchadas con apresto (todas las etiquetas terminadas)
+
+### Boceto digital previo:
+- Antes de producir, se hace un **boceto digital a escala real** con los colores de producción.
+- No se hace muestra física salvo que el cliente lo requiera por necesidad especial.
+
+## Plazos de entrega (confirmado)
+- **15 a 20 días** desde aprobación del boceto digital.
+- Variable según cantidad, terminación y temporada (temporada alta puede extenderse).
+
+## Trayectoria y capacidad (confirmado)
+- **46 años** de empresa familiar.
+- Maquinaria suiza de alta tecnología.
+- Maquinaria de terminación propia: soldado de puntas, doblado al medio, planchado con apresto.
+- Alta capacidad de producción.
 
 ## Target Audience
 **Clientes objetivo:**
@@ -39,10 +68,10 @@
 ## Differentiation
 **Diferenciadores clave:**
 - Calidad y terminación del bordado (oficio y experiencia).
-- **Acepta pedidos chicos** → ideal para marcas que recién arrancan (y crecen con KORMAN).
+- **Acepta pedidos chicos** → ideal para marcas que recién arrancan (y crecen con KORMAN ETIQUETAS).
 - Cumplimiento de plazos y trato cercano/asesoramiento.
 - Producción local en CABA (a diferencia de importar): más rápido, revisás muestra, hablás con quien lo hace.
-**Por qué eligen KORMAN:** calidad de marca grande, con la flexibilidad y cercanía de un taller local.
+**Por qué eligen KORMAN ETIQUETAS:** calidad de marca grande, con la flexibilidad y cercanía de un taller local.
 
 ## Objections
 | Objeción | Respuesta |
@@ -77,7 +106,8 @@
 
 ## Proof Points
 **Trabajos reales (vistos en IG):** Sugar, Tomineto, Clotti, Veli, Nicole Jeans, Aripa, Fashion (China's Brand), Mini Kiwi, Gitca. → usar como prueba social (con permiso).
-**Métricas:** [confirmar: años de experiencia, cantidad de clientes, capacidad de producción].
+**Métricas confirmadas:** 46 años de empresa · maquinaria suiza · terminación propia con apresto.
+**Clientes confirmados para mostrar:** Sugar · Tomineto · Clotti · Veli · Nicole Jeans · Aripa · Fashion (China's Brand) · Mini Kiwi · Gitca — todos autorizados para usar como ejemplos.
 **Testimonios:** [pendiente: pedir reseñas a clientes contentos].
 
 ## Goals

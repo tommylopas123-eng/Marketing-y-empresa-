@@ -1,0 +1,67 @@
+name: BestLabels Argentina
+url: https://www.bestlabels.ar
+type: operación internacional (20+ países)
+location: Internacional (no produce en Argentina)
+
+positioning: >
+  Tienda online de etiquetas con catálogo amplio y compra sin fricción.
+  Opera en más de 20 países con el mismo catálogo estándar.
+  No es una fábrica local argentina.
+
+target_audience:
+  - Cualquier empresa que quiera comprar online
+  - Mercado masivo internacional
+
+products:
+  - Etiquetas textiles impresas (satén, raso)
+  - Etiquetas de cuidado textil
+  - Etiquetas de tallas para ropa
+  - Etiquetas tejidas/bordadas
+  - Etiquetas de cartón
+  - Etiquetas de cuero sintético
+  - Etiquetas de cuero natural
+  - Sellos de plástico 3D
+
+pricing:
+  visible: true
+  examples:
+    - producto: Etiqueta textil impresa básica
+      precio: ~32.000 ARS / 100 unidades (~$320/u)
+    - producto: Etiqueta de marca + composición
+      precio: ~34.500 ARS / 100 unidades (~$345/u)
+  minimums: 100 unidades
+
+channels:
+  - Tienda online (e-commerce directo)
+  - Sin asesoramiento humano
+  - Sin WhatsApp
+
+strengths:
+  - Precios visibles → sin fricción inicial
+  - Mínimo bajo (100 unidades)
+  - Catálogo muy amplio
+  - Compra online 100% self-service
+  - Presencia en buscadores (SEO)
+
+weaknesses:
+  - No produce en Argentina → sin revisión local de muestra
+  - Producto de catálogo estándar, personalización limitada
+  - Sin asesoramiento ni trato humano
+  - Bordado no es su especialidad (es uno de muchos productos)
+  - Demoras internacionales posibles
+  - Sin conocimiento del mercado argentino ni relación con el cliente
+
+common_complaints: []  # sin reviews argentinas encontradas
+
+best_for:
+  - Quien quiere comprar online sin hablar con nadie
+  - Pedidos de catálogo estándar
+
+not_ideal_for:
+  - Quien quiere personalización real y asesoramiento
+  - Emprendedor que quiere ver muestras locales antes de producir
+
+korman_advantage_vs: >
+  KORMAN produce localmente en CABA (podés ir a ver la muestra),
+  da asesoramiento en el diseño y el bordado es su especialidad,
+  no un ítem más de un catálogo global.
