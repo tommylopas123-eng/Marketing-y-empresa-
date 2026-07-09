@@ -1,0 +1,262 @@
+<title>Manual del equipo — Automatizaciones</title>
+<style>
+  :root {
+    --bg: #F6F8F5;
+    --surface: #FFFFFF;
+    --ink: #1C2620;
+    --muted: #5D6D63;
+    --line: #DDE5DE;
+    --accent: #0C7A58;
+    --accent-ink: #0A5C43;
+    --accent-soft: #DCF2E4;
+    --price: #8A5A12;
+    --price-bg: #F7EDDA;
+    --code-bg: #EEF3EE;
+    --shadow: 0 1px 2px rgba(28, 38, 32, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101714; --surface: #18211C; --ink: #E7EDE8; --muted: #93A399;
+      --line: #2A362F; --accent: #3DBE8B; --accent-ink: #6FD3AB; --accent-soft: #17352A;
+      --price: #E5B564; --price-bg: #2C2517; --code-bg: #141C18; --shadow: none;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #F6F8F5; --surface: #FFFFFF; --ink: #1C2620; --muted: #5D6D63;
+    --line: #DDE5DE; --accent: #0C7A58; --accent-ink: #0A5C43; --accent-soft: #DCF2E4;
+    --price: #8A5A12; --price-bg: #F7EDDA; --code-bg: #EEF3EE; --shadow: 0 1px 2px rgba(28, 38, 32, .06);
+  }
+  :root[data-theme="dark"] {
+    --bg: #101714; --surface: #18211C; --ink: #E7EDE8; --muted: #93A399;
+    --line: #2A362F; --accent: #3DBE8B; --accent-ink: #6FD3AB; --accent-soft: #17352A;
+    --price: #E5B564; --price-bg: #2C2517; --code-bg: #141C18; --shadow: none;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 28px 18px 72px; }
+
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif; font-size: clamp(30px, 6vw, 40px); font-weight: 800; line-height: 1.08; letter-spacing: -.015em; text-wrap: balance; margin: 6px 0 10px; }
+  .lede { color: var(--muted); margin: 0; max-width: 58ch; }
+
+  h2 { font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif; font-size: 23px; font-weight: 800; letter-spacing: -.01em; margin: 56px 0 6px; text-wrap: balance; }
+  h2 .n { color: var(--accent); }
+  .sub { color: var(--muted); font-size: 14.5px; margin: 0 0 18px; }
+  h3 { font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif; font-size: 17.5px; font-weight: 800; margin: 30px 0 8px; }
+
+  .tarjeta { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); padding: 18px; margin: 0 0 14px; }
+  .tarjeta p { margin: 0 0 10px; }
+  .tarjeta p:last-child { margin: 0; }
+
+  .guion { border-left: 4px solid var(--accent); background: var(--surface); border-radius: 0 14px 14px 0; box-shadow: var(--shadow); padding: 16px 18px; margin: 14px 0; font-style: italic; color: var(--muted); }
+  .guion strong { color: var(--ink); font-style: normal; }
+
+  ol.pasos, ol.preguntas { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; counter-reset: p; }
+  ol.pasos li, ol.preguntas li { counter-increment: p; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 13px 16px 13px 52px; position: relative; }
+  ol.pasos li::before, ol.preguntas li::before { content: counter(p); position: absolute; left: 15px; top: 14px; width: 25px; height: 25px; border-radius: 50%; background: var(--accent); color: var(--bg); font-weight: 800; font-size: 13.5px; display: grid; place-items: center; }
+  ol.pasos li b { display: block; margin-bottom: 2px; }
+  ol.pasos li em, ol.preguntas li em { display: block; font-style: normal; color: var(--muted); font-size: 13.5px; margin-top: 3px; }
+
+  dl.conceptos { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+  dl.conceptos > div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 13px 16px; }
+  dl.conceptos dt { font-weight: 800; margin: 0 0 3px; }
+  dl.conceptos dd { margin: 0; color: var(--muted); font-size: 14.5px; }
+
+  .item { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; padding: 10px 0; border-top: 1px solid var(--line); }
+  .item:first-of-type { border-top: 0; padding-top: 0; }
+  .item .que { flex: 1; }
+  .item .que small { display: block; color: var(--muted); }
+  .precio { flex-shrink: 0; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-variant-numeric: tabular-nums; font-size: 12.5px; font-weight: 600; color: var(--price); background: var(--price-bg); border-radius: 999px; padding: 3px 10px; white-space: nowrap; }
+  .grupo { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); padding: 16px 18px; margin: 0 0 14px; }
+  .grupo h3 { margin: 0 0 2px; }
+  .grupo .modo { font-size: 13px; color: var(--muted); margin: 0 0 8px; }
+
+  .diagrama { background: var(--code-bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; overflow-x: auto; margin: 14px 0; }
+  .diagrama pre { margin: 0; font: 12.5px/1.5 ui-monospace, "SF Mono", Menlo, monospace; color: var(--ink); }
+
+  .chip { display: inline-block; background: var(--accent-soft); color: var(--accent-ink); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; border-radius: 999px; padding: 3px 10px; margin-bottom: 8px; }
+
+  .nota { font-size: 13.5px; color: var(--muted); }
+  footer { margin-top: 56px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+</style>
+
+<main>
+  <p class="eyebrow">Manual del equipo · leelo tranquilo, sin apuro</p>
+  <h1>Cómo funciona nuestro negocio de automatizaciones</h1>
+  <p class="lede">Este documento explica todo desde cero: qué vendemos, cómo nos presentamos, qué servicios ofrecemos y cómo se construye cada uno por dentro. No hace falta saber nada de programación — de eso se encarga la IA; nosotros ponemos la parte que la IA no puede hacer: hablar con los clientes.</p>
+
+  <h2><span class="n">1.</span> Qué hacemos, en una frase</h2>
+  <div class="tarjeta">
+    <p><strong>Le ahorramos horas de trabajo repetitivo a los negocios usando inteligencia artificial, y cobramos por eso.</strong></p>
+    <p>Un negocio típico pierde tiempo todos los días en lo mismo: responder las mismas preguntas por WhatsApp, pasar pedidos a mano a un Excel, mandar presupuestos tarde, olvidarse de confirmar turnos. Nosotros instalamos sistemas que hacen ese trabajo solos, las 24 horas. El negocio gana tiempo y ventas; nosotros cobramos una instalación y/o un abono mensual.</p>
+    <p class="nota">Dato clave del negocio: nuestros costos son de USD 8–15 por mes por cliente, y los servicios se venden entre USD 30 y 500. El margen es del 70–85%.</p>
+  </div>
+
+  <h2><span class="n">2.</span> Cómo nos presentamos a una empresa</h2>
+  <p class="sub">El guion de apertura, para decir en persona o por WhatsApp:</p>
+  <div class="guion">
+    “Hola, somos <strong>[nombre del emprendimiento]</strong>. Ayudamos a negocios como el tuyo a no perder más ventas por mensajes sin responder y a sacarse de encima el trabajo repetitivo, usando inteligencia artificial. No te vendemos nada hoy: te pedimos 20 minutos para que nos cuentes cómo es un día en tu negocio, y te armamos <strong>gratis</strong> un informe con qué se puede automatizar, cuánto tiempo ahorrarías y cuánto costaría. Si te cierra, lo hacemos; si no, te quedás con el informe.”
+  </div>
+  <p class="nota">Por qué funciona: no pedimos plata, pedimos una charla. El diagnóstico gratis abre la puerta, y el informe con el nombre de su negocio es lo que después firma la venta.</p>
+
+  <h2><span class="n">3.</span> Las 5 preguntas del diagnóstico</h2>
+  <p class="sub">En la reunión, en este orden. Las respuestas nos dicen solas qué venderle.</p>
+  <ol class="preguntas">
+    <li>Contame un día normal: ¿qué hace cada persona desde que abre hasta que cierra?</li>
+    <li>¿Qué tarea odian hacer todos acá? <em>Lo repetitivo y odiado casi siempre se puede automatizar.</em></li>
+    <li>¿Dónde se les escapan clientes? <em>Mensajes sin responder, presupuestos que nunca salieron.</em></li>
+    <li>¿Qué cosas se anotan en papel o se pasan a mano de un lado a otro?</li>
+    <li>¿Qué hacés vos que sentís que no deberías estar haciendo? <em>Esta va directo al dueño.</em></li>
+  </ol>
+
+  <h2><span class="n">4.</span> Los servicios que ofrecemos</h2>
+  <p class="sub">Nuestro catálogo, con precios de venta típicos. Lo que dice “/mes” es ingreso que se repite todos los meses.</p>
+
+  <div class="grupo">
+    <h3>Asistentes virtuales (bots)</h3>
+    <p class="modo">Nuestro producto estrella</p>
+    <div class="item"><div class="que">Bot de WhatsApp 24/7 <small>responde consultas, junta los datos del cliente y avisa al vendedor</small></div><span class="precio">30–100 /mes</span></div>
+    <div class="item"><div class="que">Chat con IA en la página web del cliente</div><span class="precio">15–40 /mes</span></div>
+    <div class="item"><div class="que">Bot interno para empleados <small>responde dudas sobre precios, manuales, procedimientos</small></div><span class="precio">30–80 /mes</span></div>
+  </div>
+
+  <div class="grupo">
+    <h3>Páginas web</h3>
+    <p class="modo">Se cobran una vez, por proyecto</p>
+    <div class="item"><div class="que">Landing page <small>una página de presentación del negocio</small></div><span class="precio">100–500</span></div>
+    <div class="item"><div class="que">Sitio de varias páginas</div><span class="precio">300–1.000</span></div>
+    <div class="item"><div class="que">Menú QR para restaurantes y cafés</div><span class="precio">50–150</span></div>
+    <div class="item"><div class="que">Página de reservas y turnos</div><span class="precio">150–400</span></div>
+  </div>
+
+  <div class="grupo">
+    <h3>Planillas y documentos inteligentes</h3>
+    <p class="modo">Casi nadie se lo ofrece a los negocios chicos</p>
+    <div class="item"><div class="que">Planilla a medida <small>stock con alertas, caja diaria, presupuestador, lista de clientes</small></div><span class="precio">50–200</span></div>
+    <div class="item"><div class="que">Generador de presupuestos y facturas en PDF</div><span class="precio">50–150</span></div>
+    <div class="item"><div class="que">Informe de ventas con gráficos y conclusiones</div><span class="precio">100–300 c/u</span></div>
+  </div>
+
+  <div class="grupo">
+    <h3>Marketing con IA</h3>
+    <p class="modo">Servicios mensuales</p>
+    <div class="item"><div class="que">Calendario de contenido <small>30 posteos por mes con el tono de la marca</small></div><span class="precio">100–400 /mes</span></div>
+    <div class="item"><div class="que">Newsletters y campañas de correo</div><span class="precio">50–200 /mes</span></div>
+    <div class="item"><div class="que">Respuesta automática a reseñas de Google e Instagram</div><span class="precio">30–100 /mes</span></div>
+  </div>
+
+  <div class="grupo">
+    <h3>Automatizaciones conectadas</h3>
+    <p class="modo">Etapa 2, con la herramienta n8n</p>
+    <div class="item"><div class="que">Los datos que junta el bot van solos a una planilla y avisan al vendedor</div><span class="precio">20–60 /mes</span></div>
+    <div class="item"><div class="que">Recordatorios de turnos automáticos por WhatsApp</div><span class="precio">20–60 /mes</span></div>
+    <div class="item"><div class="que">Facturas de proveedores que se leen y registran solas</div><span class="precio">30–100 /mes</span></div>
+  </div>
+
+  <h2><span class="n">5.</span> El diccionario: qué es cada cosa</h2>
+  <p class="sub">Siete palabras que van a aparecer todo el tiempo. Con esto se entiende todo lo que sigue.</p>
+  <dl class="conceptos">
+    <div>
+      <dt>Inteligencia artificial (IA / Claude)</dt>
+      <dd>El “cerebro” que redacta las respuestas. Es un servicio al que le mandás un texto (“el cliente preguntó esto”) y te devuelve la respuesta escrita como una persona. Se paga por uso y es baratísimo: un bot entero gasta USD 3–5 por mes.</dd>
+    </div>
+    <div>
+      <dt>Servidor</dt>
+      <dd>Una computadora que está prendida las 24 horas, conectada a internet, donde “vive” el bot. No la tenemos en casa: se alquila un pedacito de una (Railway, ~USD 5/mes) y funciona sola.</dd>
+    </div>
+    <div>
+      <dt>API</dt>
+      <dd>El “enchufe oficial” para que dos programas hablen entre sí sin humanos en el medio. WhatsApp tiene su API (la de Meta), la IA tiene la suya. Nuestro trabajo es enchufarlas.</dd>
+    </div>
+    <div>
+      <dt>Webhook</dt>
+      <dd>El timbre. Cuando un cliente escribe al WhatsApp del negocio, Meta “toca timbre” en nuestro servidor avisándole que llegó un mensaje, y ahí arranca todo.</dd>
+    </div>
+    <div>
+      <dt>Prompt</dt>
+      <dd>Las instrucciones escritas del bot: quién es, cómo habla, qué vende el negocio, qué datos tiene que pedir. Es un texto común y corriente — cambiás el texto y el bot cambia de personalidad. Acá no hay código: hay redacción.</dd>
+    </div>
+    <div>
+      <dt>GitHub</dt>
+      <dd>Nuestra carpeta compartida en internet donde se guarda todo lo que construimos, con historial de cambios (se puede volver atrás siempre). Cada uno entra con su propia cuenta; el dueño del repositorio invita al otro como colaborador y los dos ven y guardan en el mismo lugar.</dd>
+    </div>
+    <div>
+      <dt>Claude Code</dt>
+      <dd>Nuestro “equipo técnico”: una IA a la que le contamos qué necesita el cliente, en castellano, y construye el programa, lo prueba y lo guarda en GitHub. Nosotros revisamos, pedimos cambios y entregamos. Así se hizo todo lo que ya está en nuestro repositorio.</dd>
+    </div>
+  </dl>
+
+  <h2><span class="n">6.</span> Paso a paso: el bot de WhatsApp</h2>
+  <p class="sub">Nuestro producto principal, explicado entero. Así funciona por dentro:</p>
+  <div class="diagrama"><pre>
+El cliente escribe al WhatsApp del negocio
+        │
+        ▼
+Meta (WhatsApp) toca timbre en nuestro SERVIDOR  ← webhook
+        │
+        ▼
+El servidor junta el historial de esa charla
+y se lo manda a la IA junto con el PROMPT
+        │
+        ▼
+La IA redacta la respuesta (2-3 segundos)
+        │
+        ▼
+El servidor la manda de vuelta por la API de Meta
+        │
+        ▼
+Al cliente le llega como un mensaje normal ✓✓</pre></div>
+
+  <ol class="pasos">
+    <li><b>Probamos el bot sin conectar nada</b>El proyecto que ya tenemos en GitHub incluye un modo demo: una pantalla tipo WhatsApp en el navegador para chatear con el bot. Sirve para ajustar la personalidad y para mostrar a clientes. Solo requiere la clave de la IA (platform.claude.com, USD 5 de crédito).</li>
+    <li><b>Creamos la cuenta en Meta</b>En developers.facebook.com se crea una “app” (gratis). Meta nos da un número de WhatsApp de prueba, una clave temporal y un ID. Es un trámite de formularios, no de programación. <em>~40 minutos, una sola vez por cliente.</em></li>
+    <li><b>Alquilamos el servidor</b>En railway.app conectamos nuestro GitHub, elegimos el proyecto del bot y se sube solo. Nos da una dirección pública de internet. <em>USD 5/mes.</em></li>
+    <li><b>Conectamos el timbre (webhook)</b>En el panel de Meta pegamos la dirección de nuestro servidor y una contraseña que inventamos. Meta verifica que del otro lado estamos nosotros, y desde ese momento cada mensaje que llega al número nos “toca timbre”.</li>
+    <li><b>Le escribimos la personalidad</b>Editamos el archivo del prompt con los datos del negocio: qué vende, horarios, precios, qué datos juntar antes de derivar a un humano. Es escribir en castellano, cualquiera de los dos puede hacerlo.</li>
+    <li><b>Probamos y entregamos</b>Le escribimos al número desde nuestro celular y el bot responde. Cuando está pulido, se conecta el número real del negocio y se hace la verificación gratuita de Meta (para el tilde verde y más volumen).</li>
+  </ol>
+  <p class="nota">Costo total por bot: USD 8–10/mes (servidor + IA). Responder a clientes que escriben primero es gratis en Meta hasta octubre 2026; después se paga una tarifa chica por mensaje.</p>
+
+  <h2><span class="n">7.</span> Paso a paso: una landing page</h2>
+  <ol class="pasos">
+    <li><b>Juntamos el material</b>Fotos del negocio, qué hace, a quién le vende, teléfono y redes. Si no tienen textos, los redactamos nosotros con la IA.</li>
+    <li><b>Claude construye la página</b>Le contamos el negocio y el estilo que queremos; nos devuelve la página completa. Pedimos cambios hasta que quede bien (“más grande el botón”, “otro color”, “agregá los precios”).</li>
+    <li><b>La publicamos gratis</b>La página se guarda en GitHub y se publica con Vercel o GitHub Pages: servicios que muestran páginas web sin costo. La “landing” no necesita servidor pago porque no hace nada, solo se muestra.</li>
+    <li><b>Dominio propio</b>Si el cliente quiere sunegocio.com, se compra (~USD 10–15 por año, lo paga el cliente) y se conecta. Sin dominio también funciona, con una dirección gratuita.</li>
+    <li><b>Extra vendible</b>A toda landing se le puede sumar el chat con IA (mismo cerebro del bot) como adicional mensual.</li>
+  </ol>
+  <p class="nota">Costo para nosotros: USD 0 + unas horas. Se vende USD 100–500.</p>
+
+  <h2><span class="n">8.</span> Paso a paso: planillas y documentos</h2>
+  <ol class="pasos">
+    <li><b>Entendemos qué anotan hoy</b>Miramos su cuaderno o Excel actual: qué columnas, quién lo llena, qué cuentas hacen a mano.</li>
+    <li><b>Claude arma la planilla</b>En Google Sheets, con las fórmulas, alertas (“queda poco stock”) y el formato listo. Nosotros la revisamos con datos de verdad del negocio.</li>
+    <li><b>Entrega y mini-capacitación</b>Se comparte al Google del cliente y se le muestra en 15 minutos cómo usarla. Para el generador de presupuestos es igual: completa 4 datos y sale el PDF prolijo.</li>
+  </ol>
+  <p class="nota">El informe de ventas es aún más simple: el cliente nos pasa su Excel, se lo damos a Claude para analizar, y entregamos un informe con gráficos y conclusiones. Consultoría pura, sin costo técnico.</p>
+
+  <h2><span class="n">9.</span> Paso a paso: marketing mensual</h2>
+  <ol class="pasos">
+    <li><b>Brief inicial</b>Una charla con el cliente: tono de la marca (¿formal? ¿canchero?), qué vende cada mes, fechas importantes.</li>
+    <li><b>La IA genera el calendario</b>30 posteos con texto e idea visual para cada uno. Nosotros filtramos y ajustamos — el criterio lo ponemos nosotros, la redacción la pone la IA.</li>
+    <li><b>El cliente aprueba y se programa</b>Con Meta Business Suite (gratis) se dejan programados los posteos del mes en Facebook e Instagram.</li>
+    <li><b>Se repite todos los meses</b>Por eso es abono mensual: facturación que se repite con poco trabajo marginal.</li>
+  </ol>
+
+  <h2><span class="n">10.</span> Cómo trabajamos entre nosotros</h2>
+  <div class="tarjeta">
+    <p><span class="chip">El circuito de un proyecto</span></p>
+    <p><strong>1. Reunión</strong> → escuchamos al cliente con las 5 preguntas. <strong>2. Diagnóstico</strong> → le contamos a Claude lo que nos dijeron y armamos el informe con la propuesta. <strong>3. Venta</strong> → entregamos el informe, cerramos precio. <strong>4. Construcción</strong> → Claude construye, nosotros revisamos y pedimos cambios. <strong>5. Entrega</strong> → se lo mostramos funcionando al cliente. <strong>6. Cobro mensual</strong> → los servicios recurrentes quedan andando solos; una vez por semana revisamos que todo funcione.</p>
+    <p class="nota">Todo lo que se construye queda guardado en nuestro repositorio compartido de GitHub. Nada vive en la computadora de uno solo: si un celular se pierde o una compu se rompe, no se pierde nada.</p>
+  </div>
+
+  <h2><span class="n">11.</span> Qué NO vendemos (por ahora)</h2>
+  <div class="tarjeta">
+    <p>Apps para las tiendas de Apple/Google, facturación conectada a ARCA/AFIP, e integraciones con sistemas cerrados de empresas grandes. Tienen trámites, certificaciones y mantenimiento que exceden nuestro modelo. Todo lo demás del catálogo es terreno seguro.</p>
+  </div>
+
+  <footer>
+    Manual interno del equipo. La guía de venta con el diccionario de quejas y precios está en un documento aparte. Ante cualquier duda técnica: se le pregunta a Claude Code en el proyecto, que para eso es del equipo.
+  </footer>
+</main>

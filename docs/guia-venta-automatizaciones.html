@@ -1,0 +1,292 @@
+<title>Guía de venta — Automatizaciones</title>
+<style>
+  :root {
+    --bg: #F6F8F5;
+    --surface: #FFFFFF;
+    --ink: #1C2620;
+    --muted: #5D6D63;
+    --line: #DDE5DE;
+    --accent: #0C7A58;
+    --accent-ink: #0A5C43;
+    --bubble-in: #FFFFFF;
+    --bubble-out: #DCF2E4;
+    --price: #8A5A12;
+    --price-bg: #F7EDDA;
+    --shadow: 0 1px 2px rgba(28, 38, 32, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101714;
+      --surface: #18211C;
+      --ink: #E7EDE8;
+      --muted: #93A399;
+      --line: #2A362F;
+      --accent: #3DBE8B;
+      --accent-ink: #6FD3AB;
+      --bubble-in: #1F2A24;
+      --bubble-out: #17352A;
+      --price: #E5B564;
+      --price-bg: #2C2517;
+      --shadow: none;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #F6F8F5; --surface: #FFFFFF; --ink: #1C2620; --muted: #5D6D63;
+    --line: #DDE5DE; --accent: #0C7A58; --accent-ink: #0A5C43;
+    --bubble-in: #FFFFFF; --bubble-out: #DCF2E4;
+    --price: #8A5A12; --price-bg: #F7EDDA; --shadow: 0 1px 2px rgba(28, 38, 32, .06);
+  }
+  :root[data-theme="dark"] {
+    --bg: #101714; --surface: #18211C; --ink: #E7EDE8; --muted: #93A399;
+    --line: #2A362F; --accent: #3DBE8B; --accent-ink: #6FD3AB;
+    --bubble-in: #1F2A24; --bubble-out: #17352A;
+    --price: #E5B564; --price-bg: #2C2517; --shadow: none;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.55 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 28px 18px 72px; }
+
+  .eyebrow {
+    font-size: 12px; font-weight: 700; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--accent);
+  }
+  h1 {
+    font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
+    font-size: clamp(30px, 6vw, 40px); font-weight: 800;
+    line-height: 1.08; letter-spacing: -.015em; text-wrap: balance;
+    margin: 6px 0 10px;
+  }
+  .lede { color: var(--muted); margin: 0 0 8px; max-width: 56ch; }
+
+  h2 {
+    font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
+    font-size: 22px; font-weight: 800; letter-spacing: -.01em;
+    margin: 52px 0 6px; text-wrap: balance;
+  }
+  .sub { color: var(--muted); font-size: 14.5px; margin: 0 0 20px; }
+
+  /* Preguntas de diagnóstico */
+  ol.preguntas { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; counter-reset: q; }
+  ol.preguntas li {
+    counter-increment: q;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 13px 16px 13px 52px; position: relative;
+  }
+  ol.preguntas li::before {
+    content: counter(q);
+    position: absolute; left: 15px; top: 13px;
+    width: 25px; height: 25px; border-radius: 50%;
+    background: var(--accent); color: var(--bg);
+    font-weight: 800; font-size: 13.5px;
+    display: grid; place-items: center;
+  }
+  ol.preguntas li em { display: block; font-style: normal; color: var(--muted); font-size: 13.5px; margin-top: 3px; }
+
+  /* Diccionario: burbujas de chat */
+  .par { margin: 0 0 22px; display: flex; flex-direction: column; gap: 8px; }
+  .dice, .vendes { max-width: 92%; border-radius: 14px; padding: 11px 15px; }
+  .dice {
+    align-self: flex-start;
+    background: var(--bubble-in); border: 1px solid var(--line);
+    border-top-left-radius: 4px; box-shadow: var(--shadow);
+    font-style: italic;
+  }
+  .dice::before {
+    content: "El dueño dice"; display: block; font-style: normal;
+    font-size: 11px; font-weight: 700; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 3px;
+  }
+  .vendes {
+    align-self: flex-end;
+    background: var(--bubble-out); border: 1px solid transparent;
+    border-top-right-radius: 4px;
+  }
+  .vendes::before {
+    content: "Vos vendés"; display: block;
+    font-size: 11px; font-weight: 700; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--accent-ink); margin-bottom: 3px;
+  }
+  .vendes strong { color: var(--accent-ink); }
+
+  /* Catálogo */
+  .grupo {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 18px 18px 8px; margin: 0 0 14px;
+  }
+  .grupo h3 {
+    margin: 0 0 2px; font-size: 17px; font-weight: 800;
+    font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
+  }
+  .grupo .modo { font-size: 13px; color: var(--muted); margin: 0 0 10px; }
+  .item {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 14px;
+    padding: 10px 0; border-top: 1px solid var(--line);
+  }
+  .item .que { flex: 1; }
+  .item .que small { display: block; color: var(--muted); }
+  .precio {
+    flex-shrink: 0;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 12.5px; font-weight: 600; color: var(--price);
+    background: var(--price-bg); border-radius: 999px; padding: 3px 10px;
+    white-space: nowrap;
+  }
+
+  /* Regla de oro */
+  .regla {
+    border-left: 4px solid var(--accent);
+    background: var(--surface); border-radius: 0 14px 14px 0;
+    box-shadow: var(--shadow);
+    padding: 16px 18px; margin: 0 0 14px;
+  }
+  .regla p { margin: 0 0 10px; }
+  .regla p:last-child { margin: 0; }
+  .regla .frase {
+    font-style: italic; border-top: 1px dashed var(--line); padding-top: 10px;
+    color: var(--muted);
+  }
+
+  .nota { font-size: 13.5px; color: var(--muted); }
+  footer { margin-top: 56px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+</style>
+
+<main>
+  <p class="eyebrow">Kit de venta · para leer antes de cada reunión</p>
+  <h1>Qué automatizar y qué cobrar</h1>
+  <p class="lede">Tu trabajo en la reunión es escuchar cómo es un día en el negocio. Cada queja del dueño es un servicio que podés vender. Esta guía junta las preguntas, el diccionario queja&nbsp;→&nbsp;servicio y los precios.</p>
+
+  <h2>Las 5 preguntas del diagnóstico</h2>
+  <p class="sub">En este orden. Las oportunidades aparecen solas.</p>
+  <ol class="preguntas">
+    <li>Contame un día normal: ¿qué hace cada persona desde que abre hasta que cierra?</li>
+    <li>¿Qué tarea odian hacer todos acá? <em>Lo repetitivo y odiado casi siempre se puede automatizar.</em></li>
+    <li>¿Dónde se les escapan clientes? <em>Mensajes sin responder, presupuestos que nunca salieron.</em></li>
+    <li>¿Qué cosas se anotan en papel o se pasan a mano de un lado a otro?</li>
+    <li>¿Qué hacés vos que sentís que no deberías estar haciendo? <em>Al dueño, directo.</em></li>
+  </ol>
+
+  <h2>El diccionario: queja → servicio</h2>
+  <p class="sub">Diez señales que vas a escuchar seguido, y qué ofrecer en cada una.</p>
+
+  <div class="par">
+    <div class="dice">“Tenemos una persona que responde WhatsApp todo el día”</div>
+    <div class="vendes"><strong>Bot asistente de WhatsApp.</strong> Tu producto estrella. Discurso: el bot filtra el 80% repetitivo —también de noche y domingos— y la empleada atiende solo lo importante. No es “reemplazar”, es “que atienda lo que vale”.</div>
+  </div>
+
+  <div class="par">
+    <div class="dice">“Preguntan siempre lo mismo: precios, horarios, stock”</div>
+    <div class="vendes"><strong>Bot con la info cargada + menú QR o landing.</strong> Doble venta en una.</div>
+  </div>
+
+  <div class="par">
+    <div class="dice">“Se nos pasan turnos, no vienen y no avisan”</div>
+    <div class="vendes"><strong>Recordatorios y confirmación por WhatsApp.</strong> Fácil de cerrar: el dueño sabe exactamente cuánto pierde por cada ausencia.</div>
+  </div>
+
+  <div class="par">
+    <div class="dice">“Anoto los pedidos en un cuaderno / los paso a un Excel a mano”</div>
+    <div class="vendes"><strong>Planilla inteligente + registro automático desde el bot.</strong> Horas por semana ahorradas, error cero.</div>
+  </div>
+
+  <div class="par">
+    <div class="dice">“El presupuesto se lo mando cuando puedo, a veces tardo días”</div>
+    <div class="vendes"><strong>Presupuestador automático.</strong> El cliente pide, sale el PDF con su lista de precios, el dueño solo aprueba. Argumento: cada día de demora son ventas perdidas.</div>
+  </div>
+
+  <div class="par">
+    <div class="dice">“Después de venderle, no volvemos a hablar con el cliente”</div>
+    <div class="vendes"><strong>Seguimiento post-venta:</strong> mensaje de agradecimiento, pedido de reseña en Google, oferta al mes. Plata dormida en su propia base de clientes.</div>
+  </div>
+
+  <div class="par">
+    <div class="dice">“Cargamos las facturas de proveedores a mano”</div>
+    <div class="vendes"><strong>Lectura automática de facturas y comprobantes con IA</strong>, directo a la planilla contable.</div>
+  </div>
+
+  <div class="par">
+    <div class="dice">“Publicamos en Instagram cuando nos acordamos”</div>
+    <div class="vendes"><strong>Calendario de contenido mensual</strong> con textos en el tono de la marca. Servicio recurrente: facturás todos los meses.</div>
+  </div>
+
+  <div class="par">
+    <div class="dice">“No sé cuánto vendimos hasta que lo mira el contador”</div>
+    <div class="vendes"><strong>Resumen automático al WhatsApp del dueño:</strong> ventas, consultas, producto más pedido. El control del negocio en el bolsillo — les encanta.</div>
+  </div>
+
+  <div class="par">
+    <div class="dice">“El teléfono suena y estamos ocupados atendiendo”</div>
+    <div class="vendes"><strong>Migrar la atención al WhatsApp con bot</strong> + QR en el mostrador: “ahora atendemos por acá”.</div>
+  </div>
+
+  <h2>Catálogo completo con precios</h2>
+  <p class="sub">Precios de venta típicos en LATAM. Tu costo por cliente ronda USD 8–15/mes.</p>
+
+  <div class="grupo">
+    <h3>Asistentes y bots</h3>
+    <p class="modo">Se cobran por mes → ingreso recurrente</p>
+    <div class="item"><div class="que">Bot de WhatsApp 24/7 <small>atiende, califica y deriva al humano</small></div><span class="precio">30–100 /mes</span></div>
+    <div class="item"><div class="que">Widget de chat con IA en su web <small>mismo cerebro, adicional de la landing</small></div><span class="precio">15–40 /mes</span></div>
+    <div class="item"><div class="que">Bot interno para empleados <small>responde sobre manuales, precios, procedimientos</small></div><span class="precio">30–80 /mes</span></div>
+  </div>
+
+  <div class="grupo">
+    <h3>Presencia digital</h3>
+    <p class="modo">Se cobran por proyecto, una vez</p>
+    <div class="item"><div class="que">Landing page <small>hosting gratis; el cliente solo paga dominio</small></div><span class="precio">100–500</span></div>
+    <div class="item"><div class="que">Sitio de varias páginas</div><span class="precio">300–1.000</span></div>
+    <div class="item"><div class="que">Menú QR para gastronomía <small>se hace en una tarde</small></div><span class="precio">50–150</span></div>
+    <div class="item"><div class="que">Página de reservas con calendario</div><span class="precio">150–400</span></div>
+  </div>
+
+  <div class="grupo">
+    <h3>Planillas y documentos</h3>
+    <p class="modo">Por proyecto · casi nadie lo ofrece a pymes</p>
+    <div class="item"><div class="que">Planilla a medida <small>stock con alertas, caja, presupuestador, clientes</small></div><span class="precio">50–200</span></div>
+    <div class="item"><div class="que">Generador de documentos <small>presupuestos, contratos y facturas en PDF prolijo</small></div><span class="precio">50–150</span></div>
+    <div class="item"><div class="que">Informe de ventas con gráficos y conclusiones <small>te pasan su Excel, entregás análisis</small></div><span class="precio">100–300 c/u</span></div>
+  </div>
+
+  <div class="grupo">
+    <h3>Marketing con IA</h3>
+    <p class="modo">Recurrente</p>
+    <div class="item"><div class="que">Calendario de contenido <small>30 posteos/mes en el tono de la marca</small></div><span class="precio">100–400 /mes</span></div>
+    <div class="item"><div class="que">Newsletters y campañas de correo</div><span class="precio">50–200 /mes</span></div>
+    <div class="item"><div class="que">Respuesta a reseñas <small>Google Maps e Instagram; negativas las aprueba el dueño</small></div><span class="precio">30–100 /mes</span></div>
+    <div class="item"><div class="que">Textos de producto <small>MercadoLibre, Tiendanube, folletos, guiones de reels</small></div><span class="precio">por lote</span></div>
+  </div>
+
+  <div class="grupo">
+    <h3>Automatizaciones n8n <span class="nota">(etapa 2)</span></h3>
+    <p class="modo">Cada flujo es un servicio recurrente</p>
+    <div class="item"><div class="que">Leads del bot a planilla + aviso al vendedor</div><span class="precio">20–60 /mes</span></div>
+    <div class="item"><div class="que">Recordatorios de turnos automáticos</div><span class="precio">20–60 /mes</span></div>
+    <div class="item"><div class="que">Facturas que se leen y registran solas</div><span class="precio">30–100 /mes</span></div>
+  </div>
+
+  <h2>Cómo cobrar: la regla de oro</h2>
+  <div class="regla">
+    <p>No cobres por lo que te cuesta a vos (centavos): cobrá por lo que <strong>le ahorrás a él</strong>. La cuenta se hace en voz alta, delante del dueño:</p>
+    <p class="frase">“¿Cuántas horas por semana le lleva esto a tu empleada? ¿Ocho? A sueldo argentino son unos USD 150–200 por mes de tiempo. Yo te lo dejo automático por USD 50.”</p>
+    <p>Siempre ofrecés pagar <strong>menos de la mitad</strong> de lo que hoy le cuesta en tiempo. Con costos de USD 8–15 por cliente, tu margen es del 70–85%. Cinco clientes con dos automatizaciones cada uno: <strong>USD 400–600 recurrentes por mes</strong>.</p>
+  </div>
+
+  <h2>El combo de entrada</h2>
+  <div class="regla">
+    <p><strong>Landing + bot de WhatsApp + planilla de leads</strong> — “tu negocio online completo con asistente virtual”. Precio cerrado sugerido: <strong>USD 300 de instalación + USD 30/mes</strong>. Diferenciador, recurrente, y las tres piezas ya están probadas.</p>
+  </div>
+
+  <p class="nota"><strong>Qué no vender todavía:</strong> apps para las tiendas de Apple/Google, facturación conectada a ARCA/AFIP, integraciones con sistemas cerrados de grandes empresas. Tienen trámites y mantenimiento que exceden el modelo.</p>
+
+  <footer>
+    Después de cada reunión: traé lo que te contaron y armamos juntos el informe de diagnóstico con la propuesta para ese negocio. Ese papel es el que firma la venta.
+  </footer>
+</main>
