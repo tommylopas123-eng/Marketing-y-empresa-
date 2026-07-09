@@ -1,0 +1,5 @@
+# Claves y secretos: NUNCA se suben al repositorio
+.env
+
+# Dependencias
+node_modules/
