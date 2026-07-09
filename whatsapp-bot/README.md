@@ -28,7 +28,34 @@ Archivos del proyecto:
 | `src/whatsapp.js` | Envía las respuestas por la Cloud API de Meta |
 | `src/claude.js` | Le pide la respuesta a la IA |
 | `src/prompt.js` | La personalidad y las reglas del asistente (editá esto) |
+| `src/demo.js` | Demo en el navegador (`/demo`) para probar sin WhatsApp |
+| `src/chat-local.js` | Demo en la terminal (`npm run chat`) |
 | `.env.example` | Plantilla de las claves que necesitás |
+
+---
+
+## PARTE 0 — Probar el bot YA, sin trámite de Meta (5 min)
+
+No hace falta tener WhatsApp conectado para ver al asistente funcionando.
+Lo único que necesitás es la API key de Claude (paso 3):
+
+```bash
+cd whatsapp-bot
+npm install
+cp .env.example .env      # → pegá tu ANTHROPIC_API_KEY en .env
+npm start
+```
+
+Abrí **http://localhost:3000/demo** en el navegador: es una pantalla tipo
+WhatsApp donde chateás con el bot como si fueras un cliente. Usa exactamente
+el mismo cerebro que el bot real (`src/prompt.js`), así que sirve para
+ajustar la personalidad antes de conectar nada.
+
+También podés chatear desde la terminal con `npm run chat`.
+
+> ⚠️ Cuando el servidor esté publicado en internet (Railway), poné
+> `DEMO_ENABLED=false` en las variables para que nadie con la URL
+> gaste tu crédito de IA.
 
 ---
 
@@ -179,6 +206,19 @@ El token de API Setup vence a las 24 hs. Para el definitivo:
 | IA (Claude Haiku, ~1.000 mensajes/mes) | USD 3-5/mes |
 | Railway | USD 5/mes |
 | **Total típico** | **~USD 8-10/mes** |
+
+## Plan a futuro: automatizaciones con n8n
+
+Cuando el bot esté vendido/funcionando y quieras sumarle automatizaciones
+(guardar leads en Google Sheets, avisar al vendedor, agendar reuniones),
+el camino es n8n self-hosted (gratis, ~USD 5-10/mes de hosting):
+
+- El trámite de Meta y el prompt que armes acá **se reutilizan tal cual**:
+  en n8n apuntás el mismo webhook de Meta al nodo "WhatsApp Trigger"
+  y pegás el contenido de `src/prompt.js` en el nodo "AI Agent".
+- Este bot puede convivir con n8n: una opción común es que el bot siga
+  respondiendo y solo llame a n8n (por webhook) cuando junta los datos
+  de un lead, para que n8n dispare las automatizaciones.
 
 ## Seguridad
 

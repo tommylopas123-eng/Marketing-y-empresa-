@@ -12,9 +12,13 @@ import "dotenv/config";
 import express from "express";
 import { pensarRespuesta } from "./claude.js";
 import { enviarTexto, marcarLeido } from "./whatsapp.js";
+import { montarDemo } from "./demo.js";
 
 const app = express();
 app.use(express.json());
+
+// Demo en el navegador (/demo) para probar el bot sin conectar Meta
+montarDemo(app);
 
 const VERIFY_TOKEN = process.env.WHATSAPP_VERIFY_TOKEN;
 const PORT = process.env.PORT || 3000;
