@@ -34,18 +34,17 @@ for s in (-1,1):
     arm=capsule(height=24,radius=4.5)
     arm.apply_transform(R(np.deg2rad(5)*s,[0,1,0]))
     arm.apply_translation([s*14.5, 1, 50]); parts.append(arm)
-# --- cuello corto y grueso ---
-parts.append(cylinder(radius=7.0,height=18,sections=32).apply_translation([0,1,66]))
+# --- cuello ---
+parts.append(cylinder(radius=8.0,height=20,sections=32).apply_translation([0,1,68]))
 
 body=U(parts)
 # suavizado para look moldeado (redondea aristas de los primitivos)
 trimesh.smoothing.filter_taubin(body, iterations=12)
 body=U([body])  # re-normalizar
 
-# --- agujeros (despues de suavizar, quedan limpios) ---
+# --- agujero del EJE unicamente (de costado a costado, eje X). Sin pasador. ---
 rod=cylinder(radius=rod_hole_d/2,height=80,sections=64).apply_transform(R(np.pi/2,[0,1,0])).apply_translation([0,1,rod_z])
-pin=cylinder(radius=PIN_D/2,height=70,sections=32).apply_transform(R(np.pi/2,[1,0,0])).apply_translation([0,1,rod_z])
-body=trimesh.boolean.difference([body,rod,pin],engine='manifold')
+body=trimesh.boolean.difference([body,rod],engine='manifold')
 body.visual.vertex_colors=np.tile(BODY_RGBA,(len(body.vertices),1)).astype(np.uint8)
 print("BODY watertight:",body.is_watertight,"shoulders_z_top:",round(body.bounds[1][2],1))
 
@@ -64,7 +63,7 @@ tree=cKDTree(verts)
 trimesh.repair.fill_holes(h); trimesh.repair.fix_normals(h)
 # recorte con tapa -> estanco, cara intacta
 zmin,zmax=h.bounds[0][2],h.bounds[1][2]; H=zmax-zmin
-cutf, chinf, HEAD_MM, CHIN_Z = 0.22, 0.40, 26.0, 74.0
+cutf, chinf, HEAD_MM, CHIN_Z = 0.22, 0.40, 26.0, 82.0
 cut=zmin+cutf*H
 head=h.slice_plane(plane_origin=[0,0,cut],plane_normal=[0,0,1],cap=True)
 # re-aplicar color POR VERTICE despues del corte (el slice descarta colores)
