@@ -13,9 +13,12 @@ montada sobre un cuerpo estándar, listo para montar en la varilla.
 2. **Cuerpo paramétrico:** el script `build_player.py` construye el cuerpo del jugador
    (torso, hombros, brazos, piernas y pie) con primitivas, le resta el **agujero del eje**
    y el **agujero del pasador**, y le monta la cabeza encima.
-3. **Sólido imprimible:** como los modelos de IA no quedan 100 % estancos, el STL final
-   se genera por **re-mallado por vóxeles** (marching cubes) para garantizar un sólido
-   cerrado (watertight) y sin errores para el slicer.
+3. **Cabeza nítida y estanca:** la cabeza se cierra con un corte con tapa
+   (`slice_plane(cap=True)`) que la vuelve estanca **sin perder detalle de la cara**
+   (a diferencia del re-mallado por vóxeles, que la emborrona). Se apoya sobre un
+   **cuello corto**, con el mentón por encima de los hombros, estilo metegol clásico.
+4. **Exportación:** cuerpo (estanco) + cabeza (estanca) se exportan juntos; el slicer
+   los fusiona al imprimir.
 
 ## Archivos
 
@@ -29,11 +32,11 @@ montada sobre un cuerpo estándar, listo para montar en la varilla.
 
 ## Medidas de esta versión de PRUEBA
 
-- Alto total: **108 mm**
-- Ancho de hombros: ~46 mm
+- Alto total: **~97 mm**
+- Ancho de hombros: ~41 mm
+- Cabeza (mentón→coronilla): ~26 mm, sobre cuello corto
 - **Agujero del eje: 13,3 mm** (para varilla de 12,7 mm = ½") — atraviesa la cintura
 - Agujero del pasador: 2,6 mm (perpendicular al eje)
-- Volumen: ~62 cm³
 
 > ⚠️ **El diámetro del eje es un valor estándar de prueba.** Hay que ajustarlo al
 > metegol real antes de la versión definitiva.
@@ -43,16 +46,17 @@ montada sobre un cuerpo estándar, listo para montar en la varilla.
 Editar los parámetros arriba de `build_player.py` y correr:
 
 ```bash
-pip install numpy trimesh manifold3d networkx lxml scikit-image pillow
+pip install numpy trimesh manifold3d networkx lxml scikit-image pillow shapely rtree scipy
 python build_player.py
 ```
 
 Parámetros clave a cambiar cuando se tengan las medidas reales:
 
 - `ROD_D` → diámetro real de la varilla (mm)
-- `target_head_h` y las medidas del cuerpo → para ajustar la altura total
 - `rod_z` → altura del agujero del eje
 - `PIN_D` → diámetro del pasador (o cambiar a tornillo)
+- `HEAD_MM` / `CHIN_Z` → tamaño y altura de la cabeza
+- Medidas de los `box(...)` del cuerpo → para ajustar la altura/forma total
 
 ## Impresión
 
