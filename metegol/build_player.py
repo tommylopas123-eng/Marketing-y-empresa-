@@ -59,16 +59,17 @@ with open(HEAD_OBJ) as f:
         if l.startswith('v '):
             p=l.split(); verts.append([float(p[1]),float(p[3]),float(p[2])]); cols.append([float(p[4]),float(p[5]),float(p[6])])
 verts=np.array(verts); cols=np.array(cols)
-# mapear color a los vertices procesados por vecino mas cercano
 from scipy.spatial import cKDTree
-tree=cKDTree(verts); _,idx=tree.query(h.vertices)
-h.visual.vertex_colors=(np.clip(cols[idx],0,1)*255).astype(np.uint8)
+tree=cKDTree(verts)
 trimesh.repair.fill_holes(h); trimesh.repair.fix_normals(h)
 # recorte con tapa -> estanco, cara intacta
 zmin,zmax=h.bounds[0][2],h.bounds[1][2]; H=zmax-zmin
 cutf, chinf, HEAD_MM, CHIN_Z = 0.22, 0.40, 26.0, 74.0
 cut=zmin+cutf*H
 head=h.slice_plane(plane_origin=[0,0,cut],plane_normal=[0,0,1],cap=True)
+# re-aplicar color POR VERTICE despues del corte (el slice descarta colores)
+_,idx=tree.query(head.vertices)
+head.visual.vertex_colors=(np.clip(cols[idx],0,1)*255).astype(np.uint8)
 # escala: la altura menton->coronilla = HEAD_MM
 scale=HEAD_MM/((1.0-chinf)*H); head.apply_scale(scale)
 head.apply_translation([-head.centroid[0], -1.5-head.centroid[1], -head.bounds[0][2]])  # centrar xy (leve atras), base a 0
