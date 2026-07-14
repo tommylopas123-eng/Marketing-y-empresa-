@@ -32,11 +32,11 @@ montada sobre un cuerpo estándar, listo para montar en la varilla.
 
 ## Medidas de esta versión de PRUEBA
 
-- Alto total: **~97 mm**
+- Alto total: **~93 mm**
 - Ancho de hombros: ~41 mm
-- Cabeza (mentón→coronilla): ~26 mm, sobre cuello corto
+- Cabeza (mentón→coronilla): ~18 mm, sobre cuello
 - **Agujero del eje: 13,3 mm** (para varilla de 12,7 mm = ½") — atraviesa la cintura
-- Agujero del pasador: 2,6 mm (perpendicular al eje)
+- Sin agujero de pasador (solo el del eje, de costado a costado)
 
 > ⚠️ **El diámetro del eje es un valor estándar de prueba.** Hay que ajustarlo al
 > metegol real antes de la versión definitiva.

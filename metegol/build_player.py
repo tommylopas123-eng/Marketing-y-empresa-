@@ -63,7 +63,10 @@ tree=cKDTree(verts)
 trimesh.repair.fill_holes(h); trimesh.repair.fix_normals(h)
 # recorte con tapa -> estanco, cara intacta
 zmin,zmax=h.bounds[0][2],h.bounds[1][2]; H=zmax-zmin
-cutf, chinf, HEAD_MM, CHIN_Z = 0.22, 0.40, 26.0, 82.0
+cutf, chinf = 0.22, 0.40
+HEAD_MM = float(os.environ.get("HEAD_MM", 18.0))     # tamaño cabeza (menton->coronilla)
+HEAD_BASE_Z = 73.0                                    # donde apoya la cabeza (sobre el cuello)
+CHIN_Z = HEAD_BASE_Z + (chinf-cutf)/(1-chinf)*HEAD_MM # menton se ubica solo segun tamaño
 cut=zmin+cutf*H
 head=h.slice_plane(plane_origin=[0,0,cut],plane_normal=[0,0,1],cap=True)
 # re-aplicar color POR VERTICE despues del corte (el slice descarta colores)
